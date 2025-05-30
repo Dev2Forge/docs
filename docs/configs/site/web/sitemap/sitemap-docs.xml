@@ -18,16 +18,16 @@
   <url>
     <loc>https://docs.dev2forge.software/esrm/</loc>
     <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://docs.dev2forge.software/pdf2wordx/</loc>
     <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://docs.dev2forge.software/sqlazo/</loc>
     <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
