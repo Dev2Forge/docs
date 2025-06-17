@@ -1,4 +1,4 @@
-# pdf2wordx [代码](https://github.com/tutosrive/pdf2wordx/tree/main/src/pdf2wordx/)
+# pdf2wordx [代码](https://github.com/Dev2Forge/pdf2wordx/tree/main/src/pdf2wordx/)
 
 ---
 
@@ -142,7 +142,7 @@ pip install pdf2wordx
 
 1. 克隆仓库
 ```shell
-git clone https://github.com/tutosrive/pdf2wordx.git
+git clone https://github.com/Dev2Forge/pdf2wordx.git
 ```
 2. 使用你喜欢的编辑器打开从 **GitHub** 克隆的文件夹 (_pdf2wordx_)
 3. （可选）创建一个虚拟环境
@@ -166,4 +166,4 @@ python ./src/pdf2wordx/_pdf2wordx.py
 
 # 发行版
 
-<a href="https://github.com/tutosrive/pdf2wordx/releases/">Pdf TO Word 发行版</a>
+<a href="https://github.com/Dev2Forge/pdf2wordx/releases/">Pdf TO Word 发行版</a>

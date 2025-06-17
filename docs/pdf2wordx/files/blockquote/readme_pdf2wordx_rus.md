@@ -1,4 +1,4 @@
-# pdf2wordx [Код](https://github.com/tutosrive/pdf2wordx/tree/main/src/pdf2wordx/)
+# pdf2wordx [Код](https://github.com/Dev2Forge/pdf2wordx/tree/main/src/pdf2wordx/)
 
 ---
 
@@ -142,7 +142,7 @@ pip install pdf2wordx
 
 1. Клонируйте репозиторий
 ```shell
-git clone https://github.com/tutosrive/pdf2wordx.git
+git clone https://github.com/Dev2Forge/pdf2wordx.git
 ```
 2. Откройте склонированную папку из **GitHub** (_pdf2wordx_) в вашем любимом редакторе
 3. (необязательно): Создайте виртуальное окружение
@@ -166,4 +166,4 @@ python ./src/pdf2wordx/_pdf2wordx.py
 
 # Релизы
 
-<a href="https://github.com/tutosrive/pdf2wordx/releases/">Релизы Pdf TO Word</a>
+<a href="https://github.com/Dev2Forge/pdf2wordx/releases/">Релизы Pdf TO Word</a>

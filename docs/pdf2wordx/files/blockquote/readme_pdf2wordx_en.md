@@ -1,4 +1,4 @@
-# pdf2wordx [Code](https://github.com/tutosrive/pdf2wordx/tree/main/src/pdf2wordx/)
+# pdf2wordx [Code](https://github.com/Dev2Forge/pdf2wordx/tree/main/src/pdf2wordx/)
 
 ---
 
@@ -142,7 +142,7 @@ With just 2 clicks, a **PDF** is converted into a **DOCX**, using the **_pdf2doc
 
 1. Clone the repository
 ```shell
-git clone https://github.com/tutosrive/pdf2wordx.git
+git clone https://github.com/Dev2Forge/pdf2wordx.git
 ```
 2. Open the cloned **GitHub** folder (_pdf2wordx_) with your favorite editor
 3. (optional): Create a virtual environment
@@ -166,4 +166,4 @@ I will be uploading new versions of the program as soon as possible, with improv
 
 # Releases
 
-<a href="https://github.com/tutosrive/pdf2wordx/releases/">Pdf TO Word Releases</a>
+<a href="https://github.com/Dev2Forge/pdf2wordx/releases/">Pdf TO Word Releases</a>

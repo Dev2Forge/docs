@@ -1,4 +1,4 @@
-# pdf2wordx [Código](https://github.com/tutosrive/pdf2wordx/tree/main/src/pdf2wordx/)
+# pdf2wordx [Código](https://github.com/Dev2Forge/pdf2wordx/tree/main/src/pdf2wordx/)
 
 ---
 
@@ -43,7 +43,7 @@ pip install pdf2wordx
 
 ---
 
-> ### Visite [pdf2wordx](https://tutosrive.github.io/pdf2wordx/) para más documentación
+> ### Visite [pdf2wordx](https://docs.dev2forge.software/pdf2wordx/) para más documentación
 
 Convierte tus **PDF** a **DOCX** con este programa diseñado con interfaz gráfica (Python Tkinter).
 
@@ -144,7 +144,7 @@ En tan solo 2 clicks se convierte un **PDF** en un **DOCX**, usa la librería **
 
 1. Clone el repositorio
 ```shell
-git clone https://github.com/tutosrive/pdf2wordx.git
+git clone https://github.com/Dev2Forge/pdf2wordx.git
 ```
 2. Abra la carpeta que se clonó de **GitHub** (_pdf2wordx_) con su editor favorito
 3. (opcional): Cree un entorno virtual
@@ -168,4 +168,4 @@ Estaré subiendo en cuanto sea posible nuevas versiones del programa, con mejora
 
 # Releases
 
-<a href="https://github.com/tutosrive/pdf2wordx/releases/">Pdf TO Word Releases</a>
+<a href="https://github.com/Dev2Forge/pdf2wordx/releases/">Pdf TO Word Releases</a>

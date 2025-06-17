@@ -1,4 +1,4 @@
-# pdf2wordx [Code](https://github.com/tutosrive/pdf2wordx/tree/main/src/pdf2wordx/)
+# pdf2wordx [Code](https://github.com/Dev2Forge/pdf2wordx/tree/main/src/pdf2wordx/)
 
 ---
 
@@ -142,7 +142,7 @@ En seulement 2 clics, un **PDF** est converti en un **DOCX**, en utilisant la bi
 
 1. Clonez le dépôt
 ```shell
-git clone https://github.com/tutosrive/pdf2wordx.git
+git clone https://github.com/Dev2Forge/pdf2wordx.git
 ```
 2. Ouvrez le dossier cloné de **GitHub** (_pdf2wordx_) avec votre éditeur préféré
 3. (optionnel) : Créez un environnement virtuel
@@ -166,4 +166,4 @@ Je publierai de nouvelles versions du programme dès que possible, avec des amé
 
 # Versions
 
-<a href="https://github.com/tutosrive/pdf2wordx/releases/">Versions de Pdf TO Word</a>
+<a href="https://github.com/Dev2Forge/pdf2wordx/releases/">Versions de Pdf TO Word</a>
