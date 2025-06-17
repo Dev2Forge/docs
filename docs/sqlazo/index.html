@@ -1,37 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SQLAZO |  Módulo de Python para gestionar bases de datos SQLITE</title>
-  <meta name="title" content="SQLAZO |  Módulo de Python para gestionar bases de datos SQLITE" />  
-  <meta name="description" content="Módulo de python ayuda a gestionar bases de datos SQLITE brindándole facilidad para trabajar con estas" />
+  <title>SQLAZO | Python Module for managing SQLITE databases</title>
+  <meta name="title" content="SQLAZO | Python Module for managing SQLITE databases" />
+  <meta name="description" content="Python module helps manage SQLITE databases by providing an easy way to work with them" />
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tutosrive.github.io/sqlazo/" />
-  <meta property="og:title" content="SQLAZO |  Módulo de Python para gestionar bases de datos SQLITE" />
-  <meta property="og:description" content="Módulo de python ayuda a gestionar bases de datos SQLITE brindándole facilidad para trabajar con estas" />
+  <meta property="og:url" content="https://docs.dev2forge.software/sqlazo" />
+  <meta property="og:title" content="SQLAZO | Python Module for managing SQLITE databases" />
+  <meta property="og:description" content="Python module helps manage SQLITE databases by providing an easy way to work with them" />
   <meta property="og:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/sqlazo-webpage.png" />
 
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://tutosrive.github.io/sqlazo/" />
-  <meta property="twitter:title" content="SQLAZO |  Módulo de Python para gestionar bases de datos SQLITE" />
-  <meta property="twitter:description" content="Módulo de python ayuda a gestionar bases de datos SQLITE brindándole facilidad para trabajar con estas" />
+  <meta property="twitter:url" content="https://docs.dev2forge.software/sqlazo" />
+  <meta property="twitter:title" content="SQLAZO | Python Module for managing SQLITE databases" />
+  <meta property="twitter:description" content="Python module helps manage SQLITE databases by providing an easy way to work with them" />
   <meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/sqlazo-webpage.png" />
 
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/tutosrive/legendary-guacamole@main/css/modules_python_docs/style-v1.0.1.css">
+        href="https://cdn.jsdelivr.net/gh/tutosrive/legendary-guacamole@main/css/modules_python_docs/style-v1.0.1.css">
   <link rel="shortcut icon"
-    href="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/sqlazo_logo.webp"
-    type="image/x-icon">
-  <!-- Google tag (gtag.js) -->
+        href="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/sqlazo_logo.webp"
+        type="image/x-icon">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SP2SCE9RP2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -43,209 +40,215 @@
 </head>
 
 <body class="vscode-body vscode-dark">
-  <header>
-    <div class="ctn-img-nav">
-      <a href="https://www.youtube.com/@tutosrive" target="_blank">
-        <img title="@tutosrive Youtube" class="img-nav"
-          src="https://raw.githubusercontent.com/tutosrive/images-projects-srm-trg/main/svg-icons-flags-cursor/icon/youtube.svg"
-          alt="Logo youtube">
-      </a>
-      <a href="https://github.com/tutosrive" target="_blank"><img class="img-nav" title="Author"
-          src="https://avatars.githubusercontent.com/u/108991712?s=400&u=8635c5a4bf3ba434df23aa5b611cae237a964932&v=4"
-          alt="Autor Sqlazo - Santiago Rivera Marin"></a>
-    </div>
-    <h1 class="title-header" title="Repositorio proyecto, Github"><a href="https://github.com/tutosrive/sqlazo/"
-        target="_blank">SQLAZO</a></h1>
-    <a href="https://pypi.org/project/sqlazo/" target="_blank"><img class="img-nav img-repo-module"
-        title="Package python. Pip install"
-        src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/sqlazo_logo.webp"
-        alt="Autor Sqlazo - Santiago Rivera Marin"></a>
-  </header>
-  <div style="display: flex; align-items: center; justify-content: center; margin: 10px 0; gap: 10px; max-height: 48px; height: 48px;">
+<header>
+  <div class="ctn-img-nav">
+    <a href="https://www.youtube.com/@dev2forge" target="_blank">
+      <img title="@tutosrive Youtube" class="img-nav"
+           src="https://raw.githubusercontent.com/tutosrive/images-projects-srm-trg/main/svg-icons-flags-cursor/icon/youtube.svg"
+           alt="Youtube Logo">
+    </a>
+    <a href="https://github.com/tutosrive" target="_blank"><img class="img-nav" title="Author"
+                                                                src="https://avatars.githubusercontent.com/u/108991712?s=400&u=8635c5a4bf3ba434df23aa5b611cae237a964932&v=4"
+                                                                alt="Sqlazo Author - Santiago Rivera Marin"></a>
+  </div>
+  <h1 class="title-header" title="Project Repository, Github"><a href="https://github.com/dev2forge/sqlazo/"
+                                                                 target="_blank">SQLAZO</a></h1>
+  <a href="https://pypi.org/project/sqlazo/" target="_blank"><img class="img-nav img-repo-module"
+                                                                  title="Python Package. Pip install"
+                                                                  src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/sqlazo_logo.webp"
+                                                                  alt="Sqlazo Author - Santiago Rivera Marin"></a>
+</header>
+<div style="display: flex; align-items: center; justify-content: center; margin: 10px 0; gap: 10px; max-height: 48px; height: 48px;">
   <a href="https://github.com/sponsors/tutosrive" target="_blank">
-  <img src="https://img.shields.io/badge/Sponsor-%F0%9F%92%96%20tutosrive-orange?style=for-the-badge&logo=github" alt="Sponsor me on GitHub">
-</a>
+    <img src="https://img.shields.io/badge/Sponsor-%F0%9F%92%96%20tutosrive-orange?style=for-the-badge&logo=github" alt="Sponsor me on GitHub">
+  </a>
   <a href="https://www.buymeacoffee.com/tutosrive">
-    <img 
-      src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=tutosrive&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" 
-      style="height: 48px; width: auto; object-fit: contain; border-radius: 6px;" 
-      alt="Buy me a coffee button">
+    <img
+            src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=tutosrive&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+            style="height: 48px; width: auto; object-fit: contain; border-radius: 6px;"
+            alt="Buy me a coffee button">
   </a>
 </div>
-  <!-- Badges -->
-  <div>
-<!-- Total downloads -->
-    <a href="https://pepy.tech/projects/sqlazo"><img src="https://static.pepy.tech/badge/sqlazo" alt="PyPI Downloads"></a>
-<!-- Versión actual -->
-    <a href="https://pypi.org/project/sqlazo/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/sqlazo?label=sqlazo"></a>
-<!-- Python versions supported -->
-    <a href="https://python.org/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/sqlazo"></a> 
-<!-- Author -->
-    <a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/Tutos%20Rive-Author-brightgreen"></a>
-<!-- Licencia -->
-    <a href="https://raw.githubusercontent.com/tutosrive/sqlazo/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/tutosrive/sqlazo"></a>
-  </div>
-  <p>&quot;<strong>Sqlazo</strong>&quot; es un <em>módulo</em> el cual permite gestionar <em>procedimientos
-      básicos</em> en una base de datos con &quot;<strong>sqlite3</strong>&quot; en <strong>PYTHON</strong>.</p>
+<div>
+  <a href="https://pepy.tech/projects/sqlazo"><img src="https://static.pepy.tech/badge/sqlazo" alt="PyPI Downloads"></a>
+  <a href="https://pypi.org/project/sqlazo/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/sqlazo?label=sqlazo"></a>
+  <a href="https://python.org/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/sqlazo"></a>
+  <a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/Tutos%20Rive-Author-brightgreen"></a>
+  <a href="https://raw.githubusercontent.com/dev2forge/sqlazo/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/dev2forge/sqlazo"></a>
+</div>
+<p>"<strong>Sqlazo</strong>" is a <em>module</em> that allows you to manage <em>basic procedures</em> in a
+  "<strong>sqlite3</strong>" database in <strong>PYTHON</strong>.</p>
 
-  <pre
-    class="spn-green">Antes de ejecutar algún comando de este módulo, le recomiendo que revise estos dos módulos antes:<ul><li><a href="https://tutosrive.github.io/chromologger/">Chromologger</a></li><li><a href="https://tutosrive.github.io/chromolog/">Chromolog</a></li></ul></pre>
+<pre
+        class="spn-green">Before running any command from this module, I recommend you check these two modules first:<ul><li><a href="https://docs.dev2forge.software/chromologger/">Chromologger</a></li><li><a href="https://docs.dev2forge.software/chromolog/">Chromolog</a></li></ul></pre>
 
-  <h2>Inicialización</h2>
-  <p>Para iniciar, su uso, iniciaría con una instancia de la <em>clase</em> <strong>Database</strong>, la cual toma
-    como argumentos los siguientes parámetros:</p>
-  <ul class="f-ul">
-    <li><code>name:str</code>: Nombre de la base de datos (Ej: <code>'test.db'</code>).</li>
-    <li><code>check_thread:boolean</code>: Verificar ejecuciones multihilo.</li>
-  </ul>
-  <pre><code class="language-py"><span class="hljs-comment"># Ejemplo de inicialización</span>
+<h2>Initialisation</h2>
+<p>To begin, its use would start with an instance of the <strong>Database</strong> <em>class</em>, which takes the
+  following parameters as arguments:</p>
+<ul class="f-ul">
+  <li><code>name:str</code>: Name of the database (e.g., <code>'test.db'</code>).</li>
+  <li><code>check_thread:boolean</code>: Verify multi-thread executions.</li>
+</ul>
+<pre><code class="language-py"><span class="hljs-comment"># Example of initialisation</span>
 <span class="hljs-keyword">from</span> sqlazo <span class="hljs-keyword">import</span> Database
 
-db = Database(<span class="hljs-string">&#x27;test.db&#x27;</span>, <span class="hljs-literal">False</span>)
-<span class="hljs-comment"># Creará un archivo test.db listo para usar...</span>
+db = Database(<span class="hljs-string">'test.db'</span>, <span class="hljs-literal">False</span>)
+<span class="hljs-comment"># This will create a test.db file ready for use...</span>
 </code></pre>
-  <h2>Métodos públicos disponibles:</h2>
-  <ul class="f-ul">
-    <li><strong>create_table</strong>: Permite crear una tabla en la base de datos conectada.
-      <ul>
-        <li><strong>Parámetros</strong>:
-          <ul>
-            <li><code>table_name:str</code>: Nombre de la tabla que se quiere crear.</li>
-            <li><code>cols:list</code>: Una lista de las columnas que contendrá la tabla cada columna (dentro de la
-              lista) debe llevar su configuración.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
+<h2>Available Public Methods:</h2>
+<ul class="f-ul">
+  <li><strong>create_table</strong>: Allows you to create a table in the connected database.
+    <ul>
+      <li><strong>Parameters</strong>:
+        <ul>
+          <li><code>table_name:str</code>: Name of the table to be created.</li>
+          <li><code>cols:list</code>: A list of the columns the table will contain; each column (within the list)
+            must include its configuration.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-  <pre><code class="language-py"><span class="hljs-comment"># Columnas con sus configuraciones</span>
-cols = [<span class="hljs-string">&#x27;id INTEGER PRIMARY KEY&#x27;</span>, <span class="hljs-string">&#x27;name TEXT NOT NULL&#x27;</span>, <span class="hljs-string">&#x27;age INTEGER NOT NULL&#x27;</span>]
-<span class="hljs-comment"># Ejecutar &quot;consulta&quot; (Crear tabla)</span>
-db.create_table(<span class="hljs-string">&#x27;user&#x27;</span>, cols)
+<pre><code class="language-py"><span class="hljs-comment"># Columns with their configurations</span>
+cols = [<span class="hljs-string">'id INTEGER PRIMARY KEY'</span>, <span class="hljs-string">'name TEXT NOT NULL'</span>, <span class="hljs-string">'age INTEGER NOT NULL'</span>]
+<span class="hljs-comment"># Execute "query" (Create table)</span>
+db.create_table(<span class="hljs-string">'user'</span>, cols)
 </code></pre>
-  <ul class="f-ul">
-    <li><strong>insert_data</strong>: Ejecuta la &quot;consulta&quot; de <em>inserción</em> en la base de datos (Agrega
-      datos).
-      <ul>
-        <li><strong>Parámetros</strong>:</li>
-        <li><code>data:list</code>: Datos que a agregar.</li>
-        <li><code>cols:list</code>: Columnas en las cuales se insertará los datos.</li>
-        <li><code>table_name:str</code>: Nombre de la tabla con la cual se trabajará.</li>
-      </ul>
-    </li>
-  </ul>
-  <pre><code class="language-py">db.insert_data([<span class="hljs-string">&#x27;Santiago&#x27;</span>, <span class="hljs-number">19</span>], [<span class="hljs-string">&#x27;name&#x27;</span>, <span class="hljs-string">&#x27;age&#x27;</span>], <span class="hljs-string">&#x27;user&#x27;</span>)
-</code></pre>
-  <ul class="f-ul">
-    <li><strong>get_data_all</strong>: Ejecuta la &quot;consulta&quot; para obtener todos los registros de la base de
-      datos.
-      <ul>
-        <li><strong>Parámetros</strong>:
-          <ul>
-            <li><code>tablename:str</code>: Nombre de la tabla de la cual se obtendrá los registros.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  <pre><code class="language-py">db.get_data_all(<span class="hljs-string">&#x27;user&#x27;</span>)
-</code></pre>
-  <ul class="f-ul">
-    <li><strong>get_data_where</strong>: Ejecuta la &quot;consulta&quot; para obtener registros con &quot;consulta
-      personalizada&quot;.
-      <ul>
-        <li><strong>Parámetros</strong>:
-          <ul>
-            <li><code>table_name:str</code>: Nombre de la tabla con la cual se trabajará.</li>
-            <li><code>condition:str</code>: Condición para los retornos válidos de la &quot;consulta&quot;.</li>
-            <li><code>*args:str</code>: Nombres de las columnas que serán seleccionadas en la &quot;consulta&quot;.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  <pre><code class="language-py"><span class="hljs-comment"># Si el tercer parámetro existe, solo se tomarán esa columnas en la &quot;consulta&quot;</span>
-<span class="hljs-comment"># Retornará los registros que cumplen la condición, y solo retornará la columna &quot;name&quot;</span>
-<span class="hljs-comment"># select name from user where id &lt; 3</span>
-db.get_data_where(<span class="hljs-string">&#x27;user&#x27;</span>, <span class="hljs-string">&#x27;id &lt; 3&#x27;</span>, <span class="hljs-string">&#x27;name&#x27;</span>)
+<ul class="f-ul">
+  <li><strong>table_exists</strong>: Allows you to check if a table exists within a database.
+    <ul>
+      <li><strong>Parameters</strong>:
+        <ul>
+          <li><code>table_name:str</code>: Name of the table to be validated.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<span class="hljs-comment"># En caso de no existir los *args, se da por entendido que se seleccionarán todas las columnas</span>
-<span class="hljs-comment"># Retorna los registros válidos a la condición y todas las columnas</span>
-<span class="hljs-comment"># select * from user where id &lt; 3*</span>
-db.get_data_where(<span class="hljs-string">&#x27;user&#x27;</span>, <span class="hljs-string">&#x27;id &lt; 3&#x27;</span>)
+<pre><code class="language-py"><span class="hljs-comment"># Execute "query" (Validate table)</span>
+<span class="hljs-comment"># Returns a boolean indicating the table's existence</span>
+db.table_exists(<span class="hljs-string">'user'</span>)
 </code></pre>
-  <ul class="f-ul">
-    <li><strong>delete_data</strong>: Eliminar registros dea base de datos.
-      <ul>
-        <li><strong>Parámetros</strong>:
-          <ul>
-            <li><code>table:str</code>: Nombre de la tabla con la cual se trabajará.</li>
-            <li><code>condition:str</code>: Condición que debe cumplir un registro para ser eliminado.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  <pre><code class="language-py"><span class="hljs-comment"># Eliminar los usuarios menores de edad</span>
-db.delete_data(<span class="hljs-string">&#x27;user&#x27;</span>, <span class="hljs-string">&#x27;age &lt; 18&#x27;</span>)
+<ul class="f-ul">
+  <li><strong>insert_data</strong>: Executes the <em>insertion</em> "query" in the database (Adds data).
+    <ul>
+      <li><strong>Parameters</strong>:</li>
+      <li><code>data:list</code>: Data to be added.</li>
+      <li><code>cols:list</code>: Columns into which the data will be inserted.</li>
+      <li><code>table_name:str</code>: Name of the table to work with.</li>
+    </ul>
+  </li>
+</ul>
+<pre><code class="language-py">db.insert_data([<span class="hljs-string">'Santiago'</span>, <span class="hljs-number">19</span>], [<span class="hljs-string">'name'</span>, <span class="hljs-string">'age'</span>], <span class="hljs-string">'user'</span>)
 </code></pre>
-  <ul class="f-ul">
-    <li><strong>close</strong>: Cerrar conexión con la base de datos.</li>
-  </ul>
-  <pre><code class="language-py"><span class="hljs-comment"># Cerrar conexión con la base de datos</span>
+<ul class="f-ul">
+  <li><strong>get_data_all</strong>: Executes the "query" to get all records from the database.
+    <ul>
+      <li><strong>Parameters</strong>:
+        <ul>
+          <li><code>table_name:str</code>: Name of the table from which records will be retrieved.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<pre><code class="language-py">db.get_data_all(<span class="hljs-string">'user'</span>)
+</code></pre>
+<ul class="f-ul">
+  <li><strong>get_data_where</strong>: Executes the "query" to get records with a "custom query".
+    <ul>
+      <li><strong>Parameters</strong>:
+        <ul>
+          <li><code>table_name:str</code>: Name of the table to work with.</li>
+          <li><code>condition:str</code>: Condition for valid returns from the "query".</li>
+          <li><code>*args:str</code>: Names of the columns to be selected in the "query".</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<pre><code class="language-py"><span class="hljs-comment"># If the third parameter exists, only those columns will be considered in the "query"</span>
+<span class="hljs-comment"># It will return records that meet the condition and only return the "name" column</span>
+<span class="hljs-comment"># select name from user where id < 3</span>
+db.get_data_where(<span class="hljs-string">'user'</span>, <span class="hljs-string">'id < 3'</span>, <span class="hljs-string">'name'</span>)
+
+<span class="hljs-comment"># If *args do not exist, it is understood that all columns will be selected</span>
+<span class="hljs-comment"># Returns records valid for the condition and all columns</span>
+<span class="hljs-comment"># select * from user where id < 3*</span>
+db.get_data_where(<span class="hljs-string">'user'</span>, <span class="hljs-string">'id < 3'</span>)
+</code></pre>
+<ul class="f-ul">
+  <li><strong>delete_data</strong>: Delete records from the database.
+    <ul>
+      <li><strong>Parameters</strong>:
+        <ul>
+          <li><code>table:str</code>: Name of the table to work with.</li>
+          <li><code>condition:str</code>: Condition a record must meet to be deleted.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<pre><code class="language-py"><span class="hljs-comment"># Delete underage users</span>
+db.delete_data(<span class="hljs-string">'user'</span>, <span class="hljs-string">'age < 18'</span>)
+</code></pre>
+<ul class="f-ul">
+  <li><strong>close</strong>: Close connection with the database.</li>
+</ul>
+<pre><code class="language-py"><span class="hljs-comment"># Close connection with the database</span>
 db.close()
 </code></pre>
-  <h3 id="métodos-privados-">Métodos privados 🔏</h3>
-  <ul class="f-ul">
-    <li><strong>__connect</strong>: Realizar conexión a la base de datos.</li>
-    <li><strong>__commit</strong>: &quot;Refrescar&quot; cambios en la base de datos.</li>
-    <li><strong>__cursor</strong>: Crea un cursor en la conexión a la base de datos, el cual permite &quot;ejecutar
-      consultas&quot;.</li>
-  </ul>
-  <pre><code># Sólo de uso interno</code></pre>
+<h3 id="métodos-privados-">Private Methods 🔏</h3>
+<ul class="f-ul">
+  <li><strong>__connect</strong>: Establishes a connection to the database.</li>
+  <li><strong>__commit</strong>: "Refreshes" changes in the database.</li>
+  <li><strong>__cursor</strong>: Creates a cursor in the database connection, which allows "executing queries".</li>
+</ul>
+<pre><code># For internal use only</code></pre>
 
-  <h3>Ejemplo de uso completo:</h3>
-  <pre><code class="language-python">
-    <span class="hljs-comment"># Ejemplo de inicialización</span>
+<h3>Full usage example:</h3>
+<pre style="margin-bottom: 60px"><code class="language-python">
+    <span class="hljs-comment"># Example of initialisation</span>
     <span class="hljs-keyword">from</span> sqlazo <span class="hljs-keyword">import</span> Database
-    
-    db = Database(<span class="hljs-string">&#x27;test.db&#x27;</span>, <span class="hljs-literal">False</span>)
-    
-    <span class="hljs-comment"># Columnas con sus configuraciones</span>
-    cols = [<span class="hljs-string">&#x27;id INTEGER PRIMARY KEY&#x27;</span>, <span class="hljs-string">&#x27;name TEXT NOT NULL&#x27;</span>, <span class="hljs-string">&#x27;age INTEGER NOT NULL&#x27;</span>]
-    <span class="hljs-comment"># Ejecutar &quot;consulta&quot; (Crear tabla)</span>
-    db.create_table(<span class="hljs-string">&#x27;user&#x27;</span>, cols)
-    db.insert_data([<span class="hljs-string">&#x27;Santiago&#x27;</span>, <span class="hljs-number">19</span>], [<span class="hljs-string">&#x27;name&#x27;</span>, <span class="hljs-string">&#x27;age&#x27;</span>], <span class="hljs-string">&#x27;user&#x27;</span>)
-    
-    dataAll = db.get_data_all(<span class="hljs-string">&#x27;user&#x27;</span>)
-    
-    <span class="hljs-comment"># Si el tercer parámetro existe, solo se tomarán esa columnas en la &quot;consulta&quot;</span>
-    <span class="hljs-comment"># Retornará los registros que cumplen la condición, y solo retornará la columna &quot;name&quot;</span>
-    <span class="hljs-comment"># select name from user where id &lt; 3</span>
-    data_where1 = db.get_data_where(<span class="hljs-string">&#x27;user&#x27;</span>, <span class="hljs-string">&#x27;id &lt; 3&#x27;</span>, <span class="hljs-string">&#x27;name&#x27;</span>)
-    
-    <span class="hljs-comment"># En caso de no existir los *args, se da por entendido que se seleccionarán todas las columnas</span>
-    <span class="hljs-comment"># Retorna los registros válidos a la condición y todas las columnas</span>
-    <span class="hljs-comment"># select * from user where id &lt; 3*</span>
-    data_where12 = db.get_data_where(<span class="hljs-string">&#x27;user&#x27;</span>, <span class="hljs-string">&#x27;id &lt; 3&#x27;</span>)
-    
-    <span class="hljs-comment"># Eliminar los usuarios menores de edad</span>
-    db.delete_data(<span class="hljs-string">&#x27;user&#x27;</span>, <span class="hljs-string">&#x27;age &lt; 18&#x27;</span>)
-    
-    <span class="hljs-comment"># Cerrar conexión con la base de datos</span>
+
+    db = Database(<span class="hljs-string">'test.db'</span>, <span class="hljs-literal">False</span>)
+
+    <span class="hljs-comment"># Columns with their configurations</span>
+    cols = [<span class="hljs-string">'id INTEGER PRIMARY KEY'</span>, <span class="hljs-string">'name TEXT NOT NULL'</span>, <span class="hljs-string">'age INTEGER NOT NULL'</span>]
+    <span class="hljs-comment"># Execute "query" (Create table)</span>
+    db.create_table(<span class="hljs-string">'user'</span>, cols)
+    db.insert_data([<span class="hljs-string">'Santiago'</span>, <span class="hljs-number">19</span>], [<span class="hljs-string">'name'</span>, <span class="hljs-string">'age'</span>], <span class="hljs-string">'user'</span>)
+
+    dataAll = db.get_data_all(<span class="hljs-string">'user'</span>)
+
+    <span class="hljs-comment"># If the third parameter exists, only those columns will be considered in the "query"</span>
+    <span class="hljs-comment"># It will return records that meet the condition and only return the "name" column</span>
+    <span class="hljs-comment"># select name from user where id < 3</span>
+    data_where1 = db.get_data_where(<span class="hljs-string">'user'</span>, <span class="hljs-string">'id < 3'</span>, <span class="hljs-string">'name'</span>)
+
+    <span class="hljs-comment"># If *args do not exist, it is understood that all columns will be selected</span>
+    <span class="hljs-comment"># Returns records valid for the condition and all columns</span>
+    <span class="hljs-comment"># select * from user where id < 3*</span>
+    data_where12 = db.get_data_where(<span class="hljs-string">'user'</span>, <span class="hljs-string">'id < 3'</span>)
+
+    <span class="hljs-comment"># Delete underage users</span>
+    db.delete_data(<span class="hljs-string">'user'</span>, <span class="hljs-string">'age < 18'</span>)
+
+    <span class="hljs-comment"># Close connection with the database</span>
     db.close()
     </code></pre>
-  <footer style="text-align: center; margin: 10px auto; position: fixed; bottom: 0; left: 0; right: 0;">
-    <span>© Tutos Rive 2025 - sqlazo - Proyecto de código abierto bajo licencia MIT</span>
-        <a href="https://github.com/tutosrive" target="_blank">
-          <svg height="32" fill="white" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32">
-            <path
+<footer style="backdrop-filter: blur(5px); padding-bottom: 10px; zoom: 80%; text-align: center; margin: auto; position: fixed; bottom: 0; left: 0; right: 0;">
+  <span>© <a href="https://www.dev2forge.software">Dev2Forge</a> 2025 - sqlazo - <a href="https://github.com/Dev2Forge/sqlazo/blob/main/LICENSE">MIT</a></span>
+  <a href="https://github.com/dev2forge" target="_blank">
+    <svg height="12" fill="white" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32">
+      <path
               d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"
-            ></path>
-          </svg>
-        </a>
-  </footer>
+      ></path>
+    </svg>
+  </a>
+</footer>
 </body>
 
 </html>
