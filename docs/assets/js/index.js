@@ -13,6 +13,7 @@ async function loadDescription() {
 
   const description = document.querySelector('#description');
   description.innerHTML = html_readme || '';
+  __format_HTML(description);
 }
 
 /**
@@ -75,4 +76,11 @@ async function loadConfigs() {
   const req = await fetch('./assets/json/configs.json');
   const data = await req.json();
   return data;
+}
+
+function __format_HTML(ctn) {
+  const h1 = document.querySelector('#title-head');
+  const title_reame = ctn.querySelector('#dev2forgehttpswwwdev2forgesoftwaredocumentationportal');
+  h1.innerHTML = title_reame.innerHTML;
+  title_reame.remove();
 }
