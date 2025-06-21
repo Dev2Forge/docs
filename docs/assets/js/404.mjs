@@ -3,7 +3,7 @@ const BLACKLISTED_KEY_CODES = [38, 40, 37, 39, 18, 20, 17, 16, 9, 27, 144];
 const COMMANDS = {
   help: 'The page you want to visit does not exist, or it may have been deleted, or the wrong address was entered. To see the commands, enter the word <span class="red"> commands</span>',
   exit: '',
-  report: "<span class='green'>This page report has been successfully sent to support.</span>",
+  report: "<span class='green'>Feature in development...</span>",
   commands: 'List of commands: <span class="red"> help</span> , <span class="red"> report</span> ,<span class="red"> exit</span>\n',
   cls: '',
 };
@@ -44,7 +44,7 @@ const execute = function executeCommand(input) {
   }
   //If the user enters one of the words 'exit' and 'close'
   else if (input === 'close' || input === 'exit') {
-    document.location.href = '../../index.html'; // The link that the user enters after sending the exit
+    document.location.href = '/'; // The link that the user enters after sending the exit
     return;
   }
   //If the user enters the word report
