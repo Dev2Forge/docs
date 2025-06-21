@@ -39,7 +39,7 @@ async function loadRepos() {
                     <a href="${repo.html_url}" target="_blank" class="btn-repo-link flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 shadow hover:scale-110 hover:bg-blue-500 hover:text-white transition border border-blue-300 dark:border-blue-700 mr-0.5">
                         <img width="24" height="24" src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/svg-icons-flags-cursor/icon/github-logo.svg" alt="GitHub">
                     </a>
-                    <a href="${repo.homepage}" target="_blank" class="btn-repo-link flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 shadow hover:scale-110 hover:bg-blue-500 hover:text-white transition border border-blue-300 dark:border-blue-700 ml-0.5">
+                    <a href="${repo.homepage}" class="btn-repo-link flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 shadow hover:scale-110 hover:bg-blue-500 hover:text-white transition border border-blue-300 dark:border-blue-700 ml-0.5">
                         <img width="16" height="16" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/box-arrow-up-right.svg" alt="Icon redirect">
                     </a>
                 </div>
