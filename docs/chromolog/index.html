@@ -1,328 +1,312 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHROMOLOG | Módulo de python CHROMOLOG</title>
+    <meta name="description" content="Para imprimir mensajes por consola con texto de color y fondo de color, distinga los errores con texto rojo de la información con texto azul y mucho más..." />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Primary Meta Tags -->
-  <title>CHROMOLOG | Módulo de python CHROMOLOG</title>
-  <meta name="title" content="CHROMOLOG | Módulo de python CHROMOLOG" />  
-  <meta name="description" content="Para imprimir mensajes por consola con texto de color y fondo de color, distinga los `errores` con texto `rojo` de la información con texto `azul` y mucho más..." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://docs.dev2forge.software/chromolog/" />
+    <meta property="og:title" content="CHROMOLOG | Módulo de python CHROMOLOG" />
+    <meta property="og:description" content="Para imprimir mensajes por consola con texto de color y fondo de color, distinga los errores con texto rojo de la información con texto azul y mucho más..." />
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/chromolog-webpage.png" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://docs.dev2forge.software/chromolog/" />
-  <meta property="og:title" content="CHROMOLOG | Módulo de python CHROMOLOG" />
-  <meta property="og:description" content="Para imprimir mensajes por consola con texto de color y fondo de color, distinga los `errores` con texto `rojo` de la información con texto `azul` y mucho más..." />
-  <meta property="og:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/chromolog-webpage.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://docs.dev2forge.software/chromolog/" />
+    <meta property="twitter:title" content="CHROMOLOG | Módulo de python CHROMOLOG" />
+    <meta property="twitter:description" content="Para imprimir mensajes por consola con texto de color y fondo de color, distinga los errores con texto rojo de la información con texto azul y mucho más..." />
+    <meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/chromolog-webpage.png" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://docs.dev2forge.software/chromolog/" />
-  <meta property="twitter:title" content="CHROMOLOG | Módulo de python CHROMOLOG" />
-  <meta property="twitter:description" content="Para imprimir mensajes por consola con texto de color y fondo de color, distinga los `errores` con texto `rojo` de la información con texto `azul` y mucho más..." />
-  <meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/chromolog-webpage.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tutosrive/legendary-guacamole@main/css/modules_python_docs/style-v1.0.1.css" />
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/chromalog_logo.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/utils/prism/prism.css" />
+    <script defer src="../assets/utils/prism/prism.js"></script>
 
-  <!-- Meta Tags Generated with https://metatags.io -->
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/tutosrive/legendary-guacamole@main/css/modules_python_docs/style-v1.0.1.css">
-  <link rel="shortcut icon"
-    href="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/chromalog_logo.webp"
-    type="image/x-icon">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44SK7V94B8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44SK7V94B8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-44SK7V94B8');
+    </script>
 
-    gtag('config', 'G-44SK7V94B8');
-  </script>
+    <style>
+      /* RESTAURAR ESTILOS ORIGINALES */
+      .bg-blue {
+        background-color: rgb(0, 127, 201);
+        color: rgb(255, 255, 255);
+      }
+      .bg-yellow {
+        background-color: rgb(236, 240, 0);
+        color: rgb(255, 255, 255);
+      }
+      .bg-green {
+        background-color: rgb(49, 173, 0);
+        color: rgb(255, 255, 255);
+      }
+      .bg-red {
+        background-color: rgb(201, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+      .sponsor-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        gap: 10px;
+        max-height: 48px;
+        height: 48px;
+      }
+      .badges {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+    </style>
+  </head>
 
-  <style>
-    .bg-blue{
-      background-color: rgb(0, 127, 201);
-      color: black;
-    }
-    .bg-yellow{
-      background-color: rgb(236, 240, 0);
-      color: black;
-    }
-    .bg-green{
-      background-color: rgb(49, 173, 0);
-      color: rgb(255, 255, 255);
-    }
-    .bg-red{
-      background-color: rgb(201, 0, 0);
-      color: rgb(255, 255, 255);
-    }
-  </style>
-</head>
-
-<body class="vscode-body vscode-dark">
-  <header>
-    <div class="ctn-img-nav">
-      <a href="https://www.youtube.com/@dev2forge" target="_blank">
-        <img title="@tutosrive Youtube" class="img-nav"
-          src="https://raw.githubusercontent.com/tutosrive/images-projects-srm-trg/main/svg-icons-flags-cursor/icon/youtube.svg"
-          alt="Logo youtube">
+  <body class="vscode-body vscode-dark line-numbers" data-prismjs-copy-timeout="500">
+    <header>
+      <div class="ctn-img-nav">
+        <a href="https://www.youtube.com/@tutosrive" target="_blank">
+          <img title="@tutosrive Youtube" class="img-nav" src="https://raw.githubusercontent.com/tutosrive/images-projects-srm-trg/main/svg-icons-flags-cursor/icon/youtube.svg" alt="Logo youtube" />
+        </a>
+        <a href="https://github.com/tutosrive" target="_blank">
+          <img class="img-nav" title="Author" src="https://avatars.githubusercontent.com/u/108991712" alt="Autor MSQLITE - Santiago Rivera Marin" />
+        </a>
+      </div>
+      <h1 class="title-header" title="chromolog project, Github">
+        <a target="_blank" href="https://github.com/tutosrive/chromolog/">CHROMOLOG</a>
+      </h1>
+      <a href="https://pypi.org/project/chromolog/" target="_blank">
+        <img class="img-nav img-repo-module" title="Package python. Pip install" src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/chromalog_logo.webp" alt="Logo del proyecto 'chromolog'" />
       </a>
-      <a href="https://github.com/tutosrive" target="_blank"><img class="img-nav" title="Author"
-          src="https://avatars.githubusercontent.com/u/108991712?s=400&u=8635c5a4bf3ba434df23aa5b611cae237a964932&v=4"
-          alt="Autor MSQLITE - Santiago Rivera Marin"></a>
+    </header>
+
+    <div class="sponsor-section">
+      <a href="https://github.com/sponsors/tutosrive" target="_blank">
+        <img src="https://img.shields.io/badge/Sponsor-%F0%9F%92%96%20tutosrive-orange?style=for-the-badge&logo=github" alt="Sponsor me on GitHub" />
+      </a>
+      <a href="https://www.buymeacoffee.com/tutosrive">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=☕&slug=tutosrive&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" style="height: 48px; width: auto; object-fit: contain; border-radius: 6px" alt="Buy me a coffee button" />
+      </a>
     </div>
-    <h1 class="title-header" title="chromolog project, Github"><a target="_blank"
-        href="https://github.com/Dev2Forge/chromolog/">CHROMOLOG</a></h1>
-    <a href="https://pypi.org/project/chromolog/" target="_blank"><img class="img-nav img-repo-module"
-        title="Package python. Pip install"
-        src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/chromalog_logo.webp"
-        alt="Logo del proyecto 'chromolog'"></a>
-  </header>
-  <div style="display: flex; align-items: center; justify-content: center; margin: 10px 0; gap: 10px; max-height: 48px; height: 48px;">
-  <a href="https://github.com/sponsors/Dev2Forge" target="_blank">
-  <img src="https://img.shields.io/badge/Sponsor-🥇%20Dev2Forge-blue?style=for-the-badge&logo=github" alt="Sponsor me on GitHub">
-</a>
-  <a href="https://www.buymeacoffee.com/tutosrive">
-    <img 
-      src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=tutosrive&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" 
-      style="height: 48px; width: auto; object-fit: contain; border-radius: 6px;" 
-      alt="Buy me a coffee button">
-  </a>
-</div>
-<!-- Badges -->
-  <div>
-<!-- Total downloads -->
-    <a href="https://pepy.tech/projects/chromolog"><img src="https://static.pepy.tech/badge/chromolog" alt="PyPI Downloads"></a>
-<!-- Versión actual -->
-    <a href="https://pypi.org/project/chromolog/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/chromolog?label=chromolog"></a>
-<!-- Python versions supported -->
-    <a href="https://python.org/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/chromolog"></a> 
-<!-- Author -->
-    <a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/Tutos%20Rive-Author-brightgreen"></a>
-<!-- Licencia -->
-    <a href="https://raw.githubusercontent.com/tutosrive/chromolog/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/tutosrive/chromolog"></a>
-  </div>
-  <p>Imprima mensajes por consola coloridos y distinguidos de los demás, tenga un formato de salida por consola más
-    elegante y vívido según lo prefiera, ya sea un mensaje de <code>error</code> o un mensaje de operación finalizada
-    (<code>success</code>).</p>
 
-  <pre>Instalación:
+    <div class="badges">
+      <a href="https://pepy.tech/projects/chromolog"><img src="https://static.pepy.tech/badge/chromolog" alt="PyPI Downloads" /></a>
+      <a href="https://pypi.org/project/chromolog/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/chromolog?label=chromolog" /></a>
+      <a href="https://python.org/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/chromolog" /></a>
+      <a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/Tutos%20Rive-Author-brightgreen" /></a>
+      <a href="https://raw.githubusercontent.com/tutosrive/chromolog/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/tutosrive/chromolog" /></a>
+    </div>
+
+    <p>Imprima mensajes por consola coloridos y distinguidos de los demás, tenga un formato de salida por consola más elegante y vívido según lo prefiera, ya sea un mensaje de <code>error</code> o un mensaje de operación finalizada (<code>success</code>).</p>
+
+    <pre>Instalación:
 - <span class="spn-green"># pip install chromolog</span>
-- <span class="spn-green"># Esto instalará la versión más reciente (v0.2.4)</span></pre>
+- <span class="spn-green"># Esto instalará la versión más reciente</span> <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/chromolog?label=chromolog"></pre>
 
-  <h1 id="inicialización">Inicialización</h1>
-  <ol class="f-ul">
-    <li>Importación del módulo:</li>
-  </ol>
-  <pre><code class="language-python"><span class="hljs-comment"># Importe el módulo general</span>
-<span class="hljs-keyword">import</span> chromolog
-</code></pre>
-  <p>o</p>
-  <pre><code class="language-python"><span class="hljs-comment"># Importe la clase Print del módulo</span>
-<span class="hljs-keyword">from</span> chromolog <span class="hljs-keyword">import</span> Print
-</code></pre>
-  <ol start="2" class="f-ul">
-    <li>Crear una instancia de la clase <code>Print</code></li>
-  </ol>
-  <pre><code class="language-python"><span class="hljs-comment"># Cree una instancia</span>
-p = Print()
-</code></pre>
-  <ol start="3" class="f-ul">
-    <li>Use los <a href="#m%C3%A9todos-disponibles">métodos disponibles</a>.</li>
-  </ol>
-  <pre>
+    <h1 id="inicialización">Inicialización</h1>
+    <ol class="f-ul">
+      <li>Importación del módulo:</li>
+    </ol>
+    <pre><code class="language-python"># Importe el módulo general
+import chromolog</code></pre>
+    <p>o</p>
+    <pre><code class="language-python"># Importe la clase Print del módulo
+from chromolog import Print</code></pre>
+    <ol start="2" class="f-ul">
+      <li>Crear una instancia de la clase <code>Print</code></li>
+    </ol>
+    <pre><code class="language-python"># Cree una instancia
+p = Print()</code></pre>
+    <ol start="3" class="f-ul">
+      <li>Use los <a href="#métodos-disponibles">métodos disponibles</a>.</li>
+    </ol>
+    <pre>
 # Métodos con texto de color
-- <a href="#err"><span class="spn-red">err</span>&lpar;err:any&rpar;</a>: Indicado para imprimir los errores 😞
-- <a href="#exc"><span class="spn-red">exc</span>&lpar;exc:Exception&rpar;</a>: Indicado para imprimir información sobre la excepción capturada en bloques `try`
-- <a href="#inf"><span class="spn-blue">inf</span>&lpar;inf:any&rpar;</a>: Indicado para imprimir mensajes de información, variables ℹ
-- <a href="#warn"><span class="spn-yellow">warn</span>&lpar;warn:any&rpar;</a>: Indicado para imprimir mensajes de precacución 😱
-- <a href="#suc"><span class="spn-green">suc</span>&lpar;suc:any&rpar;</a>: Indicado para indicar que la ejecución fue completada con éxito ✅</pre>
-<!-- Mismos métodos, pero con fondo de color -->
-<pre>
+- <a href="#err"><span class="spn-red">err</span>(err:any)</a>: Indicado para imprimir los errores 😞
+- <a href="#exc"><span class="spn-red">exc</span>(exc:Exception)</a>: Indicado para imprimir información sobre la excepción capturada en bloques `try`
+- <a href="#inf"><span class="spn-blue">inf</span>(inf:any)</a>: Indicado para imprimir mensajes de información, variables ℹ
+- <a href="#warn"><span class="spn-yellow">warn</span>(warn:any)</a>: Indicado para imprimir mensajes de precacución 😱
+- <a href="#suc"><span class="spn-green">suc</span>(suc:any)</a>: Indicado para indicar que la ejecución fue completada con éxito ✅</pre>
+    <pre>
 # Métodos con fondo de color  
-- <a href="#err_bg"><span class="spn-red bg-red">err_bg</span>&lpar;err:any&rpar;</a>: Indicado para imprimir los errores 😞
-- <a href="#exc_bg"><span class="spn-red bg-red">exc_bg</span>&lpar;exc:Exception&rpar;</a>: Indicado para imprimir información sobre la excepción capturada en bloques `try`
-- <a href="#inf_bg"><span class="spn-blue bg-blue">inf_bg</span>&lpar;inf:any&rpar;</a>: Indicado para imprimir mensajes de información, variables ℹ
-- <a href="#warn_bg"><span class="spn-yellow bg-yellow">warn_bg</span>&lpar;warn:any&rpar;</a>: Indicado para imprimir mensajes de precacución 😱
-- <a href="#suc_bg"><span class="spn-green bg-green">suc_bg</span>&lpar;suc:any&rpar;</a>: Indicado para indicar que la ejecución fue completada con éxito ✅</pre>
-</pre>
+- <a href="#err_bg"><span class="spn-red bg-red">err_bg</span>(err:any)</a>: Indicado para imprimir los errores 😞
+- <a href="#exc_bg"><span class="spn-red bg-red">exc_bg</span>(exc:Exception)</a>: Indicado para imprimir información sobre la excepción capturada en bloques `try`
+- <a href="#inf_bg"><span class="spn-blue bg-blue">inf_bg</span>(inf:any)</a>: Indicado para imprimir mensajes de información, variables ℹ
+- <a href="#warn_bg"><span class="spn-yellow bg-yellow">warn_bg</span>(warn:any)</a>: Indicado para imprimir mensajes de precacución 😱
+- <a href="#suc_bg"><span class="spn-green bg-green">suc_bg</span>(suc:any)</a>: Indicado para indicar que la ejecución fue completada con éxito ✅</pre>
 
-  <h1 id="métodos-disponibles">Métodos Disponibles</h1>
-  <ul class="f-ul" id="err">
-    <li><code>err(err:any)</code>: Indicado para imprimir los errores 😞</li>
-  </ul>
-  <pre><code class="language-python"><span class="hljs-comment"># En un bloque try</span>
-<span class="hljs-keyword">try</span>:
-    <span class="hljs-comment"># Soy literalmente un error</span>
+    <h1 id="métodos-disponibles">Métodos Disponibles</h1>
+    <ul class="f-ul" id="err">
+      <li><code>err(err:any)</code>: Indicado para imprimir los errores 😞</li>
+    </ul>
+    <pre><code class="language-python"># En un bloque try
+try:
+    # Soy literalmente un error
     tutosrivegamer
-<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-    p.err(e)
-</code></pre>
-  <p><strong>Salida por consola</strong></p>
-  <pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-red">name &#x27;tutosrivegamer&#x27; is not defined</span>
-</code></pre>
+except Exception as e:
+    p.err(e)</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-red" style="color:red !important">name 'tutosrivegamer' is not defined</span></code></pre>
 
-  <ul class="f-ul" id="exc">
-    <li><code>exc(exc:Exception)</code>: Indicado para imprimir información sobre la excepción capturada en bloques
-      `try`</li>
-  </ul>
-  <pre><code class="language-python"><span class="hljs-comment"><span class="hljs-number">20</span> # En un bloque try</span>
-<span class="hljs-number">21</span> <span class="hljs-keyword">try</span>:
-<span class="hljs-number">22</span>  <span class="hljs-comment"># Soy literalmente un error</span>
-<span class="hljs-number">23</span>  tutosrivegamer
-<span class="hljs-number">24</span> <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-<span class="hljs-number">25</span>  p.exc(e)
-</code></pre>
-  <p><strong>Salida por consola</strong></p>
-
-  <pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-red">Exception: NameError
-<span class="hljs-meta">&gt;&gt;&gt; </span>File: c:\Users\srm\Desktop\modules\chromolog\tests\test_local.py
-<span class="hljs-meta">&gt;&gt;&gt; </span>ErrorLine: 23
-<span class="hljs-meta">&gt;&gt;&gt; </span>Messsage: name 'tutosrivegamer' is not defined</span></code></pre>
-
-  <hr>
-  <ul class="f-ul" id="inf">
-    <li><code>inf(inf:any)</code>: Indicado para imprimir mensajes de precacución, variables ℹ</li>
-  </ul>
-  <pre><code class="language-python"><span class="hljs-comment"># Darle la bienvenida al usuario</span>
-p.inf(<span class="hljs-string">&#x27;Bienbenido a chromolog&#x27;</span>)
-</code></pre>
-  <p><strong>Salida por consola</strong></p>
-  <pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">Bienbenido a chromolog</span>
-</code></pre>
-  <hr>
-  <ul class="f-ul" id="warn">
-    <li><code>warn(warn:any)</code>: Indicado para imprimir mensajes de precacución 😱</li>
-  </ul>
-  <pre><code class="language-python"><span class="hljs-comment"># Variable edad</span>
-age:<span class="hljs-built_in">int</span> = <span class="hljs-number">17</span>
-<span class="hljs-comment"># Validación menor de edad</span>
-<span class="hljs-keyword">if</span> age &lt; <span class="hljs-number">18</span>:
-    p.warn(<span class="hljs-string">&#x27;Eres menor de edad, no puedes pasar&#x27;</span>)
-</code></pre>
-  <p><strong>Salida por consola</strong></p>
-  <pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-yellow">Eres menor de edad, no puedes pasar</span>
-</code></pre>
-  <hr>
-  <ul class="f-ul" id="suc">
-    <li><code>suc(suc:any)</code>: Indicado para indicar que la ejecución fue completada con éxito ✅</li>
-  </ul>
-  <pre><code class="language-python"><span class="hljs-comment"># Tabla de multiplicar del 10</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>):
-    <span class="hljs-comment"># Imprimir resultado como &quot;información&quot;</span>
-    p.inf(<span class="hljs-string">f&#x27;<span class="hljs-subst">{i}</span> x 10: <span class="hljs-subst">{i*<span class="hljs-number">10</span>}</span>&#x27;</span>)
-p.suc(<span class="hljs-string">&#x27;Se ha ejecutado la operación exitosamente&#x27;</span>)
-</code></pre>
-  <p><strong>Salida por consola</strong></p>
-  <pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">1 x 10: 10</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">2 x 10: 20</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">3 x 10: 30</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">4 x 10: 40</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">5 x 10: 50</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">6 x 10: 60</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">7 x 10: 70</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">8 x 10: 80</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">9 x 10: 90</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue">10 x 10: 100</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span> <span class="spn-green">Se ha ejecutado la operación exitosamente</span>
-</code></pre>
-
-<!-- Nuevos métodos -->
-
-<h2>Métodos con <strong>fondo de color</strong></h2>
-
-<ul class="f-ul" id="err">
-  <li><code><span class="bg-red">err_bg(err:any)</span></code>: Indicado para imprimir los errores 😞</li>
-</ul>
-<pre><code class="language-python"><span class="hljs-comment"># En un bloque try</span>
-<span class="hljs-keyword">try</span>:
-  <span class="hljs-comment"># Soy literalmente un error</span>
+    <ul class="f-ul" id="exc">
+      <li><code>exc(exc:Exception)</code>: Indicado para imprimir información sobre la excepción capturada en bloques `try`</li>
+    </ul>
+    <pre><code class="language-python"># En un bloque try
+try:
+  # Soy literalmente un error
   tutosrivegamer
-<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-  p.err_bg(e)
-</code></pre>
-<p><strong>Salida por consola</strong></p>
-<pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-red bg-red">name &#x27;tutosrivegamer&#x27; is not defined</span>
-</code></pre>
+except Exception as e:
+  p.exc(e)</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code><span style="color: rgb(82, 82, 82);">>>></span> <span class="spn-red">Exception: NameError
+<span style="color: rgb(82, 82, 82);">>>></span> File: c:\Users\srm\Desktop\modules\chromolog\tests\test_local.py
+<span style="color: rgb(82, 82, 82);">>>></span> ErrorLine: 4
+<span style="color: rgb(82, 82, 82);">>>></span> Messsage: name 'tutosrivegamer' is not defined</span></code></pre>
 
-<ul class="f-ul" id="exc">
-  <li><code><span class="bg-red">exc_bg(exc:Exception)</span></code>: Indicado para imprimir información sobre la excepción capturada en bloques
-    `try`</li>
-</ul>
-<pre><code class="language-python"><span class="hljs-comment"><span class="hljs-number">20</span> # En un bloque try</span>
-<span class="hljs-number">21</span> <span class="hljs-keyword">try</span>:
-<span class="hljs-number">22</span>  <span class="hljs-comment"># Soy literalmente un error</span>
-<span class="hljs-number">23</span>  tutosrivegamer
-<span class="hljs-number">24</span> <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-<span class="hljs-number">25</span>  p.exc_bg(e)
-</code></pre>
-<p><strong>Salida por consola</strong></p>
+    <hr />
+    <ul class="f-ul" id="inf">
+      <li><code>inf(inf:any)</code>: Indicado para imprimir mensajes de precacución, variables informativas</li>
+    </ul>
+    <pre><code class="language-python"># Darle la bienvenida al usuario
+p.inf('Bienbenido a chromolog')</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-blue">Bienbenido a chromolog</span></code></pre>
+    <hr />
+    <ul class="f-ul" id="warn">
+      <li><code>warn(warn:any)</code>: Indicado para imprimir mensajes de precacución 😱</li>
+    </ul>
+    <pre><code class="language-python"># Variable edad
+age:int = 17
+# Validación menor de edad
+if age < 18:
+    p.warn('Eres menor de edad, no puedes pasar')</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-yellow">Eres menor de edad, no puedes pasar</span></code></pre>
+    <hr />
+    <ul class="f-ul" id="suc">
+      <li><code>suc(suc:any)</code>: Indicado para indicar que la ejecución fue completada con éxito ✅</li>
+    </ul>
+    <pre><code class="language-python"># Tabla de multiplicar del 10
+for i in range(1, 11):
+    # Imprimir resultado como "información"
+    p.inf(f'{i} x 10: {i*10}')
+p.suc('Se ha ejecutado la operación exitosamente')</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-blue">1 x 10: 10</span>
+>>> <span class="spn-blue">2 x 10: 20</span>
+>>> <span class="spn-blue">3 x 10: 30</span>
+>>> <span class="spn-blue">4 x 10: 40</span>
+>>> <span class="spn-blue">5 x 10: 50</span>
+>>> <span class="spn-blue">6 x 10: 60</span>
+>>> <span class="spn-blue">7 x 10: 70</span>
+>>> <span class="spn-blue">8 x 10: 80</span>
+>>> <span class="spn-blue">9 x 10: 90</span>
+>>> <span class="spn-blue">10 x 10: 100</span>
+>>> <span class="spn-green">Se ha ejecutado la operación exitosamente</span></code></pre>
 
-<pre><code class="language-py"><span class="hljs-meta bg-red">&gt;&gt;&gt; </span><span class="spn-red bg-red">Exception: NameError
-<span class="hljs-meta">&gt;&gt;&gt; </span>File: c:\Users\srm\Desktop\modules\chromolog\tests\test_local.py
-<span class="hljs-meta">&gt;&gt;&gt; </span>ErrorLine: 23
-<span class="hljs-meta">&gt;&gt;&gt; </span>Messsage: name 'tutosrivegamer' is not defined</span></code></pre>
+    <h2>Métodos con <strong>fondo de color</strong></h2>
 
-<hr>
-<ul class="f-ul" id="inf">
-  <li><code><span class="bg-blue">inf_bg(inf:any)</span></code>: Indicado para imprimir mensajes de precacución, variables ℹ</li>
-</ul>
-<pre><code class="language-python"><span class="hljs-comment"># Darle la bienvenida al usuario</span>
-p.inf_bg(<span class="hljs-string">&#x27;Bienbenido a chromolog&#x27;</span>)
-</code></pre>
-<p><strong>Salida por consola</strong></p>
-<pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">Bienbenido a chromolog</span>
-</code></pre>
-<hr>
-<ul class="f-ul" id="warn">
-  <li><code><span class="bg-yellow">warn_bg(warn:any)</span></code>: Indicado para imprimir mensajes de precacución 😱</li>
-</ul>
-<pre><code class="language-python"><span class="hljs-comment"># Variable edad</span>
-age:<span class="hljs-built_in">int</span> = <span class="hljs-number">17</span>
-<span class="hljs-comment"># Validación menor de edad</span>
-<span class="hljs-keyword">if</span> age &lt; <span class="hljs-number">18</span>:
-  p.warn_bg(<span class="hljs-string">&#x27;Eres menor de edad, no puedes pasar&#x27;</span>)
-</code></pre>
-<p><strong>Salida por consola</strong></p>
-<pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-yellow bg-yellow">Eres menor de edad, no puedes pasar</span>
-</code></pre>
-<hr>
-<ul class="f-ul" id="suc">
-  <li><code><span class="bg-green">suc_bg(suc:any)</span></code>: Indicado para indicar que la ejecución fue completada con éxito ✅</li>
-</ul>
-<pre><code class="language-python"><span class="hljs-comment"># Tabla de multiplicar del 10</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>):
-  <span class="hljs-comment"># Imprimir resultado como &quot;información&quot;</span>
-  p.inf_bg(<span class="hljs-string">f&#x27;<span class="hljs-subst">{i}</span> x 10: <span class="hljs-subst">{i*<span class="hljs-number">10</span>}</span>&#x27;</span>)
-p.suc_bg(<span class="hljs-string">&#x27;Se ha ejecutado la operación exitosamente&#x27;</span>)
-</code></pre>
-<p><strong>Salida por consola</strong></p>
-<pre><code class="language-py"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">1 x 10: 10</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">2 x 10: 20</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">3 x 10: 30</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">4 x 10: 40</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">5 x 10: 50</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">6 x 10: 60</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">7 x 10: 70</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">8 x 10: 80</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">9 x 10: 90</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="spn-blue bg-blue">10 x 10: 100</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span> <span class="spn-green bg-green">Se ha ejecutado la operación exitosamente</span>
-</code></pre>
-<footer style="backdrop-filter: blur(5px); padding-bottom: 10px; zoom: 80%; text-align: center; margin: auto; position: fixed; bottom: 0; left: 0; right: 0;">
-  <span>© <a href="https://www.dev2forge.software">Dev2Forge</a> 2025 - chromolog- <a href="https://github.com/Dev2Forge/chromolog/blob/main/LICENSE">MIT</a></span>
-  <a href="https://github.com/dev2forge" target="_blank">
-    <svg height="12" fill="white" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32">
-      <path
-              d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"
-      ></path>
-    </svg>
-  </a>
-</footer>
-</body>
+    <ul class="f-ul" id="err_bg">
+      <li>
+        <code><span class="bg-red">err_bg(err:any)</span></code
+        >: Indicado para imprimir los errores 😞
+      </li>
+    </ul>
+    <pre><code class="language-python"># En un bloque try
+try:
+    # Soy literalmente un error
+    tutosrivegamer
+except Exception as e:
+    p.err_bg(e)</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-red bg-red">name 'tutosrivegamer' is not defined</span></code></pre>
 
+    <ul class="f-ul" id="exc_bg">
+      <li>
+        <code><span class="bg-red">exc_bg(exc:Exception)</span></code
+        >: Indicado para imprimir información sobre la excepción capturada en bloques `try`
+      </li>
+    </ul>
+    <pre><code class="language-python"># En un bloque try
+try:
+  # Soy literalmente un error
+  tutosrivegamer
+except Exception as e:
+  p.exc_bg(e)</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code><span style="color: rgb(82, 82, 82);">>>> </span><span class="spn-red bg-red">Exception: NameError</span>
+<span style="color: rgb(82, 82, 82);">>>> </span><span class="spn-red bg-red">File: c:\Users\srm\Desktop\modules\chromolog\tests\test_local.py</span>
+<span style="color: rgb(82, 82, 82);">>>> </span><span class="spn-red bg-red">ErrorLine: 4</span>
+<span style="color: rgb(82, 82, 82);">>>> </span><span class="spn-red bg-red">Messsage: name 'tutosrivegamer' is not defined</span></code></pre>
+
+    <hr />
+    <ul class="f-ul" id="inf_bg">
+      <li>
+        <code><span class="bg-blue">inf_bg(inf:any)</span></code
+        >: Indicado para imprimir mensajes de precacución, variables informativas
+      </li>
+    </ul>
+    <pre><code class="language-python"># Darle la bienvenida al usuario
+p.inf_bg('Bienbenido a chromolog')</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-blue bg-blue">Bienbenido a chromolog</span></code></pre>
+    <hr />
+    <ul class="f-ul" id="warn_bg">
+      <li>
+        <code><span class="bg-yellow">warn_bg(warn:any)</span></code
+        >: Indicado para imprimir mensajes de precacución 😱
+      </li>
+    </ul>
+    <pre><code class="language-python"># Variable edad
+age:int = 17
+# Validación menor de edad
+if age < 18:
+    p.warn_bg('Eres menor de edad, no puedes pasar')</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-yellow bg-yellow">Eres menor de edad, no puedes pasar</span></code></pre>
+    <hr />
+    <ul class="f-ul" id="suc_bg">
+      <li>
+        <code><span class="bg-green">suc_bg(suc:any)</span></code
+        >: Indicado para indicar que la ejecución fue completada con éxito ✅
+      </li>
+    </ul>
+    <pre><code class="language-python"># Tabla de multiplicar del 10
+for i in range(1, 11):
+    # Imprimir resultado como "información"
+    p.inf_bg(f'{i} x 10: {i*10}')
+p.suc_bg('Se ha ejecutado la operación exitosamente')</code></pre>
+    <p><strong>Salida por consola</strong></p>
+    <pre><code>>>> <span class="spn-blue bg-blue">1 x 10: 10</span>
+>>> <span class="spn-blue bg-blue">2 x 10: 20</span>
+>>> <span class="spn-blue bg-blue">3 x 10: 30</span>
+>>> <span class="spn-blue bg-blue">4 x 10: 40</span>
+>>> <span class="spn-blue bg-blue">5 x 10: 50</span>
+>>> <span class="spn-blue bg-blue">6 x 10: 60</span>
+>>> <span class="spn-blue bg-blue">7 x 10: 70</span>
+>>> <span class="spn-blue bg-blue">8 x 10: 80</span>
+>>> <span class="spn-blue bg-blue">9 x 10: 90</span>
+>>> <span class="spn-blue bg-blue">10 x 10: 100</span>
+>>> <span class="spn-green bg-green">Se ha ejecutado la operación exitosamente</span></code></pre>
+
+    <footer style="backdrop-filter: blur(5px); padding-bottom: 10px; zoom: 80%; text-align: center; margin: auto; position: fixed; bottom: 0; left: 0; right: 0">
+      <span>© <a href="https://www.dev2forge.software">Dev2Forge</a> 2025 - chromolog- <a href="https://github.com/Dev2Forge/chromolog/blob/main/LICENSE">MIT</a></span>
+      <a href="https://github.com/dev2forge" target="_blank">
+        <svg height="12" fill="white" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32">
+          <path
+            d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"
+          ></path>
+        </svg>
+      </a>
+    </footer>
+  </body>
 </html>
