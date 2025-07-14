@@ -33,7 +33,7 @@ async function loadRepos() {
       // Skip repositories that are not in the configsWeb list
       if (!configsWeb.ignoreRepos.includes(repo.name)) {
         const card = document.createElement('div');
-        card.className = 'flex flex-col justify-between items-center w-64 h-64 bg-gray-100 dark:bg-gray-800 p-4 rounded shadow hover:shadow-lg transition snap-start row-span-1';
+        card.className = 'flex flex-col justify-between items-center w-64 h-95 bg-gray-100 dark:bg-gray-800 p-4 rounded shadow hover:shadow-lg transition snap-start row-span-1';
         card.innerHTML = `
                 <h2 class="text-xl font-semibold text-center w-full mb-2">${repo.name}</h2>
                 <div class="flex-1 w-full overflow-y-auto mb-2 no-scrollbar">
@@ -47,13 +47,29 @@ async function loadRepos() {
                         <img width="16" height="16" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/box-arrow-up-right.svg" alt="Icon redirect">
                     </a>
                 </div>
+                <div class="w-full flex justify-center pt-4">
+                  <img alt="Pepy Total Downloads" src="https://img.shields.io/pepy/dt/${fix_name(repo.name)}?color=blue&style=flat-square" class="h-5 object-contain me-1">
+                  <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/${fix_name(repo.name)}?color=orange" class="h-5 object-contain">
+                </div>
+                <div class="w-full flex justify-center">
+                  <img width="100" src="${configsWeb.logos[repo.name.toLowerCase()]}" alt="${repo.name} logo" class="object-cover rounded mt-2">
+                </div>
+                <div class="w-full flex justify-center mt-2">
+                    <code class="text-sm">pip install ${fix_name(repo.name)}</code>
+                </div>
             `;
+
         container.appendChild(card);
       }
     });
   } catch (e) {
+    console.log(e);
     container.innerHTML = '<p class="text-red-500">Failed to load repositories.</p>';
   }
+}
+
+function fix_name(name) {
+  return name === 'E-SRM' ? 'effect-srm' : name;
 }
 
 async function loadConfigs() {
