@@ -11,14 +11,14 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://docs.dev2forge.software/chromologger/" />
+  <meta property="og:url" content="https://tutosrive.github.io/chromologger/" />
   <meta property="og:title" content="CHROMOLOGGER | Módulo de python CHROMOLOGGER para gestionar registros de ejecución" />
   <meta property="og:description" content="Almacene los registros de ejecución en un archivo (.log, .txt, ...), permite guardar registros de `Excepciones` detalladas al igual que información de la ejecución, ¡Usted decide que almacenar!"" />
   <meta property="og:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/chromologger-webpage.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://docs.dev2forge.software/chromologger/" />
+  <meta property="twitter:url" content="https://tutosrive.github.io/chromologger/" />
   <meta property="twitter:title" content="CHROMOLOGGER | Módulo de python CHROMOLOGGER para gestionar registros de ejecución" />
   <meta property="twitter:description" content="Almacene los registros de ejecución en un archivo (.log, .txt, ...), permite guardar registros de `Excepciones` detalladas al igual que información de la ejecución, ¡Usted decide que almacenar!"" />
   <meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/modules/chromologger-webpage.png" />
@@ -46,7 +46,7 @@
 <body class="vscode-body vscode-dark">
   <header>
     <div class="ctn-img-nav">
-      <a href="https://www.youtube.com/@dev2forge" target="_blank">
+      <a href="https://www.youtube.com/@tutosrive" target="_blank">
         <img title="@tutosrive Youtube" class="img-nav"
           src="https://raw.githubusercontent.com/tutosrive/images-projects-srm-trg/main/svg-icons-flags-cursor/icon/youtube.svg"
           alt="Logo youtube">
@@ -56,15 +56,15 @@
           alt="Autor chromologger - Santiago Rivera Marin"></a>
     </div>
     <h1 class="title-header" title="chromologger project, Github"><a target="_blank"
-        href="https://github.com/Dev2Forge/chromologger/">CHROMOLOGGER</a></h1>
+        href="https://github.com/tutosrive/chromologger/">CHROMOLOGGER</a></h1>
     <a href="https://pypi.org/project/chromologger/" target="_blank"><img class="img-nav img-repo-module"
         title="Package python. Pip install"
         src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@refs/heads/main/modules/chronolog_logo.webp"
         alt="Logo del proyecto 'ChromaLog'"></a>
   </header>
   <div style="display: flex; align-items: center; justify-content: center; margin: 10px 0; gap: 10px; max-height: 48px; height: 48px;">
-  <a href="https://github.com/sponsors/Dev2Forge" target="_blank">
-  <img src="https://img.shields.io/badge/Sponsor-🥇%20Dev2Forge-blue?style=for-the-badge&logo=github" alt="Sponsor me on GitHub">
+  <a href="https://github.com/sponsors/tutosrive" target="_blank">
+  <img src="https://img.shields.io/badge/Sponsor-%F0%9F%92%96%20tutosrive-orange?style=for-the-badge&logo=github" alt="Sponsor me on GitHub">
 </a>
   <a href="https://www.buymeacoffee.com/tutosrive">
     <img 
@@ -86,105 +86,444 @@
 <!-- Licencia -->
     <a href="https://raw.githubusercontent.com/tutosrive/chromologger/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/tutosrive/chromologger"></a>
   </div>
-  <p>&quot;<strong>Chromologger</strong>&quot; es un módulo diseñado para facilitar la creación de registros
-    (<em>logs</em>) en aplicaciones desarrolladas con <strong>Python</strong>. Proporciona una manera sencilla y
-    estructurada de <em>documentar eventos</em>, <span class="spn-red">errores</span> y actividades en los programas,
-    mejorando la capacidad de
-    monitoreo y
-    depuración del código.
+  <p>&quot;<strong>Chromologger</strong>&quot; es un módulo avanzado de logging diseñado para facilitar la creación de registros
+    (<em>logs</em>) profesionales en aplicaciones desarrolladas con <strong>Python</strong>. Proporciona una solución completa y 
+    fácil de usar para documentar <em>eventos</em>, <span class="spn-red">excepciones</span>, y actividades del sistema,
+    mejorando significativamente la capacidad de
+    monitoreo, debugging y
+    mantenimiento del código.
+
+  <h3>🚀 Características Principales</h3>
+  <ul class="f-ul">
+    <li><strong>Logging automático con timestamps precisos</strong> - Cada registro incluye fecha y hora con microsegundos</li>
+    <li><strong>Manejo inteligente de excepciones</strong> - Traceback completo con archivo, línea y descripción</li>
+    <li><strong>Archivos de log organizados</strong> - Soporte para múltiples niveles (INFO, ERROR, etc.)</li>
+    <li><strong>Integración con chromolog</strong> - Salida colorizada en consola para mejor visualización</li>
+    <li><strong>Gestión automática de rutas</strong> - Detección inteligente del directorio del script llamador</li>
+    <li><strong>Sistema de logging interno</strong> - Debug y mantenimiento del propio módulo</li>
+    <li><strong>Fácil implementación</strong> - API simple y intuitiva</li>
+  </ul>
 
   <pre>Requerimientos:
-- <span class="spn-blue">chromolog>=0.2.0</span>
+- <span class="spn-blue">chromolog==0.2.5</span> <span class="spn-green"># Para salida colorizada en consola</span>
 - <span class="spn-green"># pip install chromolog</span>
-- <span class="spn-green"># Esto instalará la versión más reciente (v0.2.4)</span></pre>
+- <span class="spn-green"># pip install chromologger</span></pre>
 
   <h3>
-    <p>Ejemplo de registro: En una línea</p>
+    <p>📋 Formato de registro detallado</p>
   </h3>
-  <pre><span class="spn-green">2025-01-06 19:52:08.636560</span> - <span class="spn-blue">Exception</span>: <span class="spn-red">FileNotFoundError</span> - <span class="spn-blue">File</span>: <span class="spn-yellow">c:\Users\srm\Desktop\msqlite\msqlite\__logger.py</span> - <span class="spn-blue">ErrorLine</span>: 35 - <span class="spn-yellow">Messsage</span>: <span class="spn-red">[Errno 2]</span> <span class="spn-red">No such file or directory</span>: <span class="spn-yellow">'./data/log'</span>
+  <pre><span class="spn-blue">[INFO]</span><span class="spn-green">[2025-01-06 19:52:08.636560]</span> - <span class="spn-yellow">Aplicación iniciada correctamente</span>
+<span class="spn-red">[ERROR]</span><span class="spn-green">[2025-01-06 19:52:08.636560]</span> - <span class="spn-blue">Exception</span>: <span class="spn-red">FileNotFoundError</span> - <span class="spn-blue">File</span>: <span class="spn-yellow">c:\Users\srm\Desktop\app\main.py</span> - <span class="spn-blue">ErrorLine</span>: 35 - <span class="spn-blue">Message</span>: <span class="spn-red">[Errno 2]</span> <span class="spn-red">No such file or directory</span>: <span class="spn-yellow">'./data/config.json'</span>
 </pre>
-  <p>Para empezar a usar, iniciaría con una instancia de la <em>clase</em> <strong>Logger</strong>, la cual toma como
-    argumentos el siguiente parámetro:</p>
-  <ul class="f-ul">
-    <li><code>name:str</code>: Nombre del archivo en el cual se guardarán los registros (Ej: <code>'log.log'</code>).
-    </li>
-  </ul>
+
+  <h2 id="instalación-y-uso-rápido">🔧 Instalación y Uso Rápido</h2>
+  
+  <h3>Instalación</h3>
+  <pre><code class="language-bash"># Instalar chromologger
+pip install chromologger
+
+# Instalar dependencia (si no se instala automáticamente)
+pip install chromolog==0.2.5
+</code></pre>
+
+  <h3>Uso Básico</h3>
+  <pre><code class="language-py"><span class="hljs-keyword">from</span> chromologger <span class="hljs-keyword">import</span> Logger
+
+<span class="hljs-comment"># Crear logger (archivo por defecto: log.log en directorio del script)</span>
+logger = Logger()
+
+<span class="hljs-comment"># Registrar mensaje informativo</span>
+logger.log(<span class="hljs-string">'Aplicación iniciada correctamente'</span>)
+
+<span class="hljs-comment"># Registrar excepción</span>
+<span class="hljs-keyword">try</span>:
+    resultado = <span class="hljs-number">10</span> / <span class="hljs-number">0</span>
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+    logger.log_e(e)
+
+<span class="hljs-comment"># Cerrar logger (liberar recursos)</span>
+logger.close()
+</code></pre>
+
+  <h3>Uso Avanzado con Archivo Personalizado</h3>
+  <pre><code class="language-py"><span class="hljs-keyword">from</span> chromologger <span class="hljs-keyword">import</span> Logger
+<span class="hljs-keyword">import</span> os
+
+<span class="hljs-comment"># Crear directorio si no existe</span>
+os.makedirs(<span class="hljs-string">'./logs'</span>, exist_ok=<span class="hljs-literal">True</span>)
+
+<span class="hljs-comment"># Logger con archivo personalizado</span>
+app_logger = Logger(<span class="hljs-string">'./logs/mi_aplicacion.log'</span>)
+
+<span class="hljs-comment"># Registrar diferentes tipos de eventos</span>
+app_logger.log(<span class="hljs-string">'Sistema iniciado'</span>)
+app_logger.log(<span class="hljs-string">f'Usuario {<span class="hljs-string">"admin"</span>} conectado desde IP 192.168.1.100'</span>)
+
+<span class="hljs-comment"># También acepta otros tipos de datos</span>
+app_logger.log({<span class="hljs-string">'evento'</span>: <span class="hljs-string">'login'</span>, <span class="hljs-string">'usuario'</span>: <span class="hljs-string">'admin'</span>, <span class="hljs-string">'timestamp'</span>: <span class="hljs-string">'2025-01-06'</span>})
+app_logger.log(<span class="hljs-number">42</span>)  <span class="hljs-comment"># Números también son válidos</span>
+
+<span class="hljs-comment"># Siempre cerrar el logger</span>
+app_logger.close()
+</code></pre>
+
+  <p>📁 <strong>Ubicación del archivo</strong>: Si usa el nombre por defecto <code>'log.log'</code>, el archivo se creará en el mismo directorio del script que llama al Logger. Para rutas personalizadas, asegúrese de que el directorio exista.</p>
+
   <blockquote>
-    <p>NOTA: Es necesario que el directorio donde se guardará el archivo esté creado, ÚNICAMENTE el
-      <strong>directorio</strong>, el archivo se creará dentro de automáticamente...
+    <p>💡 <strong>Tip</strong>: El logger detecta automáticamente la ubicación del script que lo llama y crea el archivo de log en ese directorio. No necesita especificar rutas complejas para uso básico.
     </p>
   </blockquote>
-  <pre><code class="language-py"><span class="hljs-comment"># Ejemplo de inicialización</span>
-<span class="hljs-keyword">from</span> chromologger <span class="hljs-keyword">import</span> Logger
 
-<span class="hljs-comment"># Teniendo creado el directorio &quot;data&quot;</span>
-log = Logger(<span class="hljs-string">&#x27;./data/log.log&#x27;</span>)
-<span class="hljs-comment"># Creará un archivo log.log listo para usar...</span>
+  <h2 id="documentación-de-la-api">📚 Documentación de la API</h2>
+
+  <h3>Clase Logger</h3>
+  <p>La clase principal que gestiona todos los registros con timestamps automáticos y manejo de excepciones.</p>
+
+  <h4>Constructor</h4>
+  <pre><code class="language-py">Logger(log_file_name: str = <span class="hljs-string">'log.log'</span>)
 </code></pre>
-  <h2 id="métodos-públicos-disponibles">Métodos públicos disponibles:</h2>
   <ul class="f-ul">
-    <li><strong>log</strong>: Permite guardar mensajes <strong>generales</strong> en el registro, es decir, <strong>NO
-        ERRORES</strong>, mensajes de información <em>ordinaria</em> (general).
+    <li><strong>Parámetros</strong>:
       <ul>
-        <li><strong>Parámetros</strong>:
+        <li><code>log_file_name</code> (str, opcional): Nombre o ruta del archivo de log. 
           <ul>
-            <li><code>msg:any</code>: Mensaje que se registrará en el archivo.</li>
+            <li>Si es <code>'log.log'</code>: Se crea en el directorio del script llamador</li>
+            <li>Si es otra ruta: Se respeta la ubicación especificada</li>
           </ul>
         </li>
       </ul>
     </li>
   </ul>
-  <pre><code class="language-py"><span class="hljs-comment"># Mensaje general (no error)</span>
-log.log(<span class="hljs-string">&#x27;Ejecución finalizada sin errores&#x27;</span>)
-</code></pre>
-  <p><strong>Dentro del archivo de registro (log.log)</strong>:</p>
-  <pre><span class="spn-green">2025-01-06 19:52:08.636560</span> - <span class="spn-yellow">Ejecución finalizada sin errores</span>
-</pre>
+  <h2 id="métodos-públicos-disponibles">🔧 Métodos Públicos Disponibles</h2>
+
+  <h3>🗒️ log(msg: any) → None</h3>
+  <p>Registra mensajes informativos generales con nivel INFO y timestamp automático.</p>
   <ul class="f-ul">
-    <li><strong>log_e</strong>: Permite registrar errores, es un registro más específico &rpar;Toma registros <strong>Exception</strong>&lpar;.
+    <li><strong>Parámetros</strong>:
       <ul>
-        <li><strong>Parámetros</strong>:
-          <ul>
-            <li><code>e:Exception</code>: Únicamente se permiten <strong>excepciones</strong>, porque dentro del
-              módulo
-              se trabaja con el objeto <strong>Exception</strong>.</li>
-          </ul>
-        </li>
+        <li><code>msg</code> (any): Mensaje a registrar. Acepta strings, números, diccionarios, listas, etc.</li>
+      </ul>
+    </li>
+    <li><strong>Características</strong>:
+      <ul>
+        <li>Conversión automática a string</li>
+        <li>Timestamp con precisión de microsegundos</li>
+        <li>Nivel INFO por defecto</li>
+        <li>Notificación en consola de la ubicación del archivo</li>
       </ul>
     </li>
   </ul>
 
-
-  <pre><code class="language-python"><span class="hljs-comment"><span class="hljs-number">5</span>  # En un bloque try</span>
-<span class="hljs-number">6</span>  <span class="hljs-keyword">try</span>:
-<span class="hljs-number">7</span>    <span class="hljs-comment"># Soy literalmente un error</span>
-<span class="hljs-number">8</span>    tutosrivegamer
-<span class="hljs-number">9</span>  <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-<span class="hljs-number">10</span>   log.log_e(e)
+  <pre><code class="language-py"><span class="hljs-comment"># Diferentes tipos de mensajes</span>
+logger.log(<span class="hljs-string">'Operación completada exitosamente'</span>)
+logger.log(<span class="hljs-string">f'Procesados {count} elementos en {time} segundos'</span>)
+logger.log({<span class="hljs-string">'status'</span>: <span class="hljs-string">'success'</span>, <span class="hljs-string">'items'</span>: <span class="hljs-number">150</span>, <span class="hljs-string">'time'</span>: <span class="hljs-number">2.5</span>})
+logger.log([<span class="hljs-string">'evento1'</span>, <span class="hljs-string">'evento2'</span>, <span class="hljs-string">'evento3'</span>])
 </code></pre>
 
-  <p><strong>Dentro del archivo de registro (log.log)</strong>:</p>
-  <pre><span class="spn-green">2025-01-06 20:21:30.744693</span> - <span class="spn-blue">Exception</span>: <span class="spn-red">NameError</span> - <span class="spn-blue">File</span>: <span class="spn-yellow">c:\Users\srm\Desktop\msqlite\test.py</span> - <span class="spn-blue">ErrorLine</span>: 8 - <span class="spn-yellow">Messsage</span>: <span class="spn-yellow">name 'tutosrivegamer' is not defined</span>
+  <p><strong>📄 Resultado en el archivo de log</strong>:</p>
+  <pre><span class="spn-blue">[INFO]</span><span class="spn-green">[2025-01-06 19:52:08.636560]</span> - <span class="spn-yellow">Operación completada exitosamente</span>
+<span class="spn-blue">[INFO]</span><span class="spn-green">[2025-01-06 19:52:09.125430]</span> - <span class="spn-yellow">Procesados 150 elementos en 2.5 segundos</span>
+<span class="spn-blue">[INFO]</span><span class="spn-green">[2025-01-06 19:52:09.332100]</span> - <span class="spn-yellow">{'status': 'success', 'items': 150, 'time': 2.5}</span>
 </pre>
-  <h3 id="métodos-privados-">Métodos privados 🔏</h3>
+
+  <h3>⚠️ log_e(e: Exception) → None</h3>
+  <p>Registra excepciones con información detallada de traceback, incluyendo archivo, línea y mensaje completo.</p>
   <ul class="f-ul">
-    <li><strong>__write</strong>: Escribe los mensages en el archivo cargado</li>
-    <li><strong>__date</strong>: Obtiene la fecha actual</li>
-    <li><strong>__log</strong>: Toma registro de errores internos, guarda los registros en el archivo
-      &quot;./log.log&quot; (En el directorio raíz del módulo)</li>
+    <li><strong>Parámetros</strong>:
+      <ul>
+        <li><code>e</code> (Exception): Instancia de Exception o sus subclases (ValueError, FileNotFoundError, etc.)</li>
+      </ul>
+    </li>
+    <li><strong>Información registrada automáticamente</strong>:
+      <ul>
+        <li>Tipo de excepción (ZeroDivisionError, FileNotFoundError, etc.)</li>
+        <li>Ruta completa del archivo donde ocurrió</li>
+        <li>Número de línea exacto del error</li>
+        <li>Mensaje descriptivo de la excepción</li>
+        <li>Nivel ERROR</li>
+      </ul>
+    </li>
   </ul>
-  <pre><code># Solo de uso interno
+
+  <pre><code class="language-python"><span class="hljs-comment"># Ejemplo completo de manejo de errores</span>
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-comment"># Operación que puede fallar</span>
+    with open(<span class="hljs-string">'archivo_inexistente.txt'</span>, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> f:
+        contenido = f.read()
+<span class="hljs-keyword">except</span> FileNotFoundError <span class="hljs-keyword">as</span> e:
+    logger.log_e(e)  <span class="hljs-comment"># Registra error detallado</span>
+
+<span class="hljs-keyword">try</span>:
+    resultado = <span class="hljs-number">10</span> / <span class="hljs-number">0</span>
+<span class="hljs-keyword">except</span> ZeroDivisionError <span class="hljs-keyword">as</span> e:
+    logger.log_e(e)
+
+<span class="hljs-keyword">try</span>:
+    lista = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+    elemento = lista[<span class="hljs-number">10</span>]  <span class="hljs-comment"># Índice fuera de rango</span>
+<span class="hljs-keyword">except</span> IndexError <span class="hljs-keyword">as</span> e:
+    logger.log_e(e)
 </code></pre>
-  <footer style="backdrop-filter: blur(5px); padding-bottom: 10px; zoom: 80%; text-align: center; margin: auto; position: fixed; bottom: 0; left: 0; right: 0;">
-  <span>© <a href="https://www.dev2forge.software">Dev2Forge</a> 2025 - chromologger - <a href="https://github.com/Dev2Forge/chromologger/blob/main/LICENSE">MIT</a></span>
-  <a href="https://github.com/dev2forge" target="_blank">
-    <svg height="12" fill="white" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32">
-      <path
+
+  <p><strong>📄 Resultado en el archivo de log</strong>:</p>
+  <pre><span class="spn-red">[ERROR]</span><span class="spn-green">[2025-01-06 20:21:30.744693]</span> - <span class="spn-blue">Exception</span>: <span class="spn-red">FileNotFoundError</span> - <span class="spn-blue">File</span>: <span class="spn-yellow">c:\Users\srm\Desktop\app\main.py</span> - <span class="spn-blue">ErrorLine</span>: 15 - <span class="spn-blue">Message</span>: <span class="spn-yellow">[Errno 2] No such file or directory: 'archivo_inexistente.txt'</span>
+<span class="spn-red">[ERROR]</span><span class="spn-green">[2025-01-06 20:21:30.756123]</span> - <span class="spn-blue">Exception</span>: <span class="spn-red">ZeroDivisionError</span> - <span class="spn-blue">File</span>: <span class="spn-yellow">c:\Users\srm\Desktop\app\main.py</span> - <span class="spn-blue">ErrorLine</span>: 19 - <span class="spn-blue">Message</span>: <span class="spn-yellow">division by zero</span>
+</pre>
+
+  <h3>🔒 close() → bool</h3>
+  <p>Cierra el archivo de log y libera los recursos del sistema.</p>
+  <ul class="f-ul">
+    <li><strong>Retorna</strong>:
+      <ul>
+        <li><code>True</code>: Archivo cerrado exitosamente</li>
+        <li><code>False</code>: No había archivo válido para cerrar</li>
+      </ul>
+    </li>
+    <li><strong>Recomendaciones</strong>:
+      <ul>
+        <li>Siempre llamar al finalizar el uso del logger</li>
+        <li>Considerar el patrón context manager (with statement)</li>
+        <li>Verificar el valor de retorno para confirmar el cierre</li>
+      </ul>
+    </li>
+  </ul>
+
+  <pre><code class="language-py"><span class="hljs-comment"># Uso recomendado</span>
+logger = Logger(<span class="hljs-string">'mi_app.log'</span>)
+logger.log(<span class="hljs-string">'Iniciando operaciones'</span>)
+
+<span class="hljs-comment"># ... lógica de la aplicación ...</span>
+
+<span class="hljs-comment"># Cerrar y verificar</span>
+<span class="hljs-keyword">if</span> logger.close():
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Logger cerrado correctamente'</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Advertencia: No se pudo cerrar el logger'</span>)
+</code></pre>
+
+  <h2 id="ejemplos-avanzados">🔥 Ejemplos Avanzados de Uso</h2>
+
+  <h3>Aplicación Web con Logging Completo</h3>
+  <pre><code class="language-py"><span class="hljs-keyword">from</span> chromologger <span class="hljs-keyword">import</span> Logger
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+<span class="hljs-comment"># Configurar directorio de logs</span>
+log_dir = <span class="hljs-string">'./logs'</span>
+os.makedirs(log_dir, exist_ok=<span class="hljs-literal">True</span>)
+
+<span class="hljs-comment"># Logger para eventos de la aplicación</span>
+app_logger = Logger(<span class="hljs-string">f'{log_dir}/app_{datetime.now().strftime("%Y%m%d")}.log'</span>)
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">WebApplication</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
+        app_logger.log(<span class="hljs-string">'Inicializando aplicación web'</span>)
+    
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">handle_request</span>(<span class="hljs-params">self, user_id, endpoint</span>):
+        <span class="hljs-keyword">try</span>:
+            app_logger.log(<span class="hljs-string">f'Usuario {user_id} accediendo a {endpoint}'</span>)
+            
+            <span class="hljs-comment"># Simular procesamiento</span>
+            <span class="hljs-keyword">if</span> endpoint == <span class="hljs-string">'/api/data'</span>:
+                <span class="hljs-comment"># Simular error ocasional</span>
+                <span class="hljs-keyword">import</span> random
+                <span class="hljs-keyword">if</span> random.random() &lt; <span class="hljs-number">0.1</span>:  <span class="hljs-comment"># 10% de probabilidad de error</span>
+                    <span class="hljs-keyword">raise</span> ConnectionError(<span class="hljs-string">'Database connection failed'</span>)
+                
+                app_logger.log(<span class="hljs-string">f'Datos enviados exitosamente a usuario {user_id}'</span>)
+            
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            app_logger.log_e(e)
+            app_logger.log(<span class="hljs-string">f'Error procesando request de usuario {user_id}'</span>)
+    
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">shutdown</span>(<span class="hljs-params">self</span>):
+        app_logger.log(<span class="hljs-string">'Cerrando aplicación web'</span>)
+        app_logger.close()
+
+<span class="hljs-comment"># Uso</span>
+app = WebApplication()
+app.handle_request(<span class="hljs-string">'user123'</span>, <span class="hljs-string">'/api/data'</span>)
+app.handle_request(<span class="hljs-string">'user456'</span>, <span class="hljs-string">'/api/profile'</span>)
+app.shutdown()
+</code></pre>
+  <h3>Sistema de Monitoreo con Múltiples Loggers</h3>
+  <pre><code class="language-py"><span class="hljs-keyword">from</span> chromologger <span class="hljs-keyword">import</span> Logger
+<span class="hljs-keyword">import</span> time
+
+<span class="hljs-comment"># Diferentes loggers para diferentes propósitos</span>
+access_logger = Logger(<span class="hljs-string">'./logs/access.log'</span>)
+error_logger = Logger(<span class="hljs-string">'./logs/errors.log'</span>)
+performance_logger = Logger(<span class="hljs-string">'./logs/performance.log'</span>)
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">monitor_system</span>():
+    start_time = time.time()
+    
+    <span class="hljs-keyword">try</span>:
+        access_logger.log(<span class="hljs-string">'Sistema de monitoreo iniciado'</span>)
+        
+        <span class="hljs-comment"># Simular trabajo</span>
+        time.sleep(<span class="hljs-number">2</span>)
+        
+        <span class="hljs-comment"># Registrar rendimiento</span>
+        elapsed = time.time() - start_time
+        performance_logger.log(<span class="hljs-string">f'Operación completada en {elapsed:.2f} segundos'</span>)
+        
+        access_logger.log(<span class="hljs-string">'Monitoreo completado exitosamente'</span>)
+        
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        error_logger.log_e(e)
+    
+    <span class="hljs-keyword">finally</span>:
+        <span class="hljs-comment"># Cerrar todos los loggers</span>
+        access_logger.close()
+        error_logger.close()
+        performance_logger.close()
+
+monitor_system()
+</code></pre>
+
+  <h2 id="características-técnicas">⚙️ Características Técnicas</h2>
+
+  <h3>Formato de Timestamp</h3>
+  <p>Los timestamps incluyen precisión hasta microsegundos para máxima precisión en el debugging:</p>
+  <pre><span class="spn-green">YYYY-MM-DD HH:MM:SS.microseconds</span>
+<span class="spn-green">2025-01-06 20:21:30.744693</span>
+</pre>
+
+  <h3>Niveles de Log Soportados</h3>
+  <ul class="f-ul">
+    <li><span class="spn-blue">[INFO]</span> - Mensajes informativos generales</li>
+    <li><span class="spn-red">[ERROR]</span> - Excepciones y errores del sistema</li>
+    <li>� Futuros niveles: WARNING, DEBUG, CRITICAL</li>
+  </ul>
+
+  <h3>Gestión Inteligente de Rutas</h3>
+  <ul class="f-ul">
+    <li><strong>Detección automática</strong>: El logger detecta el directorio del script llamador</li>
+    <li><strong>Rutas relativas</strong>: Soporte completo para rutas como <code>./logs/app.log</code></li>
+    <li><strong>Rutas absolutas</strong>: Compatible con rutas completas del sistema</li>
+    <li><strong>Creación automática</strong>: El archivo se crea si no existe</li>
+  </ul>
+
+  <h2 id="solución-de-problemas">🔧 Solución de Problemas</h2>
+
+  <h3>Errores Comunes</h3>
+
+  <h4>1. FileNotFoundError al crear el logger</h4>
+  <pre><code class="language-py"><span class="hljs-comment"># ❌ Error: directorio no existe</span>
+logger = Logger(<span class="hljs-string">'./logs_inexistentes/app.log'</span>)
+
+<span class="hljs-comment"># ✅ Solución: crear directorio primero</span>
+<span class="hljs-keyword">import</span> os
+os.makedirs(<span class="hljs-string">'./logs'</span>, exist_ok=<span class="hljs-literal">True</span>)
+logger = Logger(<span class="hljs-string">'./logs/app.log'</span>)
+</code></pre>
+
+  <h4>2. Logger no escribe al archivo</h4>
+  <pre><code class="language-py"><span class="hljs-comment"># Verificar que el logger se inicializó correctamente</span>
+logger = Logger()
+<span class="hljs-keyword">if</span> hasattr(logger, <span class="hljs-string">'file'</span>) <span class="hljs-keyword">and</span> logger.file != <span class="hljs-number">-1</span>:
+    logger.log(<span class="hljs-string">'Logger funcionando correctamente'</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Error: Logger no se inicializó correctamente'</span>)
+</code></pre>
+
+  <h4>3. Archivos de log no se cierran</h4>
+  <pre><code class="language-py"><span class="hljs-comment"># Siempre usar try/finally o context managers</span>
+logger = <span class="hljs-literal">None</span>
+<span class="hljs-keyword">try</span>:
+    logger = Logger(<span class="hljs-string">'app.log'</span>)
+    logger.log(<span class="hljs-string">'Trabajando...'</span>)
+<span class="hljs-keyword">finally</span>:
+    <span class="hljs-keyword">if</span> logger:
+        logger.close()
+</code></pre>
+
+  <h3>Logging Interno del Módulo</h3>
+  <p>Chromologger mantiene su propio sistema de logging interno para diagnosticar problemas del módulo. Si encuentra errores, revise:</p>
+  <pre><code># Ubicación del log interno
+./src/chromologger/log.log
+
+# También se muestran mensajes en consola con colores
+</code></pre>
+
+  <h2 id="mejores-prácticas">✨ Mejores Prácticas</h2>
+
+  <h3>1. Organización de Logs</h3>
+  <pre><code class="language-py"><span class="hljs-comment"># Organizar logs por fecha</span>
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+date_str = datetime.now().strftime(<span class="hljs-string">"%Y%m%d"</span>)
+logger = Logger(<span class="hljs-string">f'./logs/app_{date_str}.log'</span>)
+
+<span class="hljs-comment"># O por funcionalidad</span>
+auth_logger = Logger(<span class="hljs-string">'./logs/authentication.log'</span>)
+db_logger = Logger(<span class="hljs-string">'./logs/database.log'</span>)
+api_logger = Logger(<span class="hljs-string">'./logs/api_requests.log'</span>)
+</code></pre>
+
+  <h3>2. Context Managers (Recomendado para futuras versiones)</h3>
+  <pre><code class="language-py"><span class="hljs-comment"># Patrón actual recomendado</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">process_data</span>():
+    logger = Logger(<span class="hljs-string">'data_processing.log'</span>)
+    <span class="hljs-keyword">try</span>:
+        logger.log(<span class="hljs-string">'Iniciando procesamiento de datos'</span>)
+        <span class="hljs-comment"># ... procesamiento ...</span>
+        logger.log(<span class="hljs-string">'Procesamiento completado'</span>)
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        logger.log_e(e)
+    <span class="hljs-keyword">finally</span>:
+        logger.close()
+</code></pre>
+
+  <h3>3. Logging Informativo vs Errores</h3>
+  <pre><code class="language-py"><span class="hljs-comment"># ✅ Usar log() para eventos normales</span>
+logger.log(<span class="hljs-string">'Usuario autenticado exitosamente'</span>)
+logger.log(<span class="hljs-string">'Base de datos conectada'</span>)
+logger.log(<span class="hljs-string">'Archivo procesado: 150 registros'</span>)
+
+<span class="hljs-comment"># ✅ Usar log_e() solo para excepciones</span>
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-comment"># operación riesgosa</span>
+    <span class="hljs-keyword">pass</span>
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+    logger.log_e(e)  <span class="hljs-comment"># Información completa de traceback</span>
+</code></pre>
+
+  <h3 id="métodos-privados">🔏 Arquitectura Interna</h3>
+  <p>El módulo incluye métodos privados para funcionamiento interno (no accesibles directamente):</p>
+  <ul class="f-ul">
+    <li><strong>__write()</strong>: Escritura formateada de mensajes con timestamp</li>
+    <li><strong>__open()</strong>: Apertura segura de archivos con manejo de errores</li>
+    <li><strong>__log()</strong>: Sistema de logging interno del módulo para debug</li>
+    <li><strong>__traceback()</strong>: Extracción detallada de información de excepciones</li>
+  </ul>
+  <pre><code># Uso exclusivamente interno - No accesible al usuario
+# Estos métodos garantizan la robustez y confiabilidad del módulo
+</code></pre>
+
+  <h2 id="próximas-características">🚀 Próximas Características</h2>
+  <ul class="f-ul">
+    <li>🔄 Soporte para múltiples niveles de log (WARNING, DEBUG, CRITICAL)</li>
+    <li>🔄 Context managers (with statement)</li>
+    <li>🔄 Rotación automática de archivos por tamaño/fecha</li>
+    <li>🔄 Configuración de formato personalizada</li>
+    <li>🔄 Filtros de log por nivel</li>
+    <li>🔄 Exportación a JSON/CSV</li>
+    <li>🔄 Modo debug para controlar salida en consola</li>
+  </ul>
+  <footer style="text-align: center; margin: 10px auto; position: fixed; bottom: 0; left: 0; right: 0;">
+   <span>© Tutos Rive 2025 - chromologger - Proyecto de código abierto bajo licencia MIT</span>
+        <a href="https://github.com/tutosrive" target="_blank">
+          <svg height="32" fill="white" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32">
+            <path
               d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"
-      ></path>
-    </svg>
-  </a>
-</footer>
+            ></path>
+          </svg>
+        </a>
+  </footer>
+  </footer>
 </body>
 
 </html>
