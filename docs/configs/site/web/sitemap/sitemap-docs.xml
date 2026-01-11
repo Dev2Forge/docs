@@ -6,27 +6,27 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.is-a.softwarechromolog/</loc>
+    <loc>https://docs.dev2forge.is-a.software/chromolog/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.is-a.softwarechromologger/</loc>
+    <loc>https://docs.dev2forge.is-a.software/chromologger/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.is-a.softwareesrm/</loc>
+    <loc>https://docs.dev2forge.is-a.software/esrm/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.is-a.softwarepdf2wordx/</loc>
+    <loc>https://docs.dev2forge.is-a.software/pdf2wordx/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.is-a.softwaresqlazo/</loc>
+    <loc>https://docs.dev2forge.is-a.software/sqlazo/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
