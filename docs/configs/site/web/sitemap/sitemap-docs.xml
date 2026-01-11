@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://docs.dev2forge.software/</loc>
+    <loc>https://docs.dev2forge.is-a.software</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.software/chromolog/</loc>
+    <loc>https://docs.dev2forge.is-a.softwarechromolog/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.software/chromologger/</loc>
+    <loc>https://docs.dev2forge.is-a.softwarechromologger/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.software/esrm/</loc>
+    <loc>https://docs.dev2forge.is-a.softwareesrm/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.software/pdf2wordx/</loc>
+    <loc>https://docs.dev2forge.is-a.softwarepdf2wordx/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://docs.dev2forge.software/sqlazo/</loc>
+    <loc>https://docs.dev2forge.is-a.softwaresqlazo/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>

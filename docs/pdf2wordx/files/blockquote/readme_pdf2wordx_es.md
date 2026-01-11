@@ -43,7 +43,7 @@ pip install pdf2wordx
 
 ---
 
-> ### Visite [pdf2wordx](https://docs.dev2forge.software/pdf2wordx/) para más documentación
+> ### Visite [pdf2wordx](https://docs.dev2forge.is-a.softwarepdf2wordx/) para más documentación
 
 Convierte tus **PDF** a **DOCX** con este programa diseñado con interfaz gráfica (Python Tkinter).
 
