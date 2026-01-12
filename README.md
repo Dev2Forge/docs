@@ -1,6 +1,6 @@
-# [Dev2Forge](https://www.dev2forge.software) Documentation Portal
+# [Dev2Forge](https://dev2forge.is-a.software) Documentation Portal
 
-Welcome to the official documentation portal for [Dev2Forge](https://www.dev2forge.software), your comprehensive resource for open-source software projects, modules, and tools developed by the Dev2Forge organisation.
+Welcome to the official documentation portal for [Dev2Forge](https://dev2forge.is-a.software), your comprehensive resource for open-source software projects, modules, and tools developed by the Dev2Forge organisation.
 
 ---
 
@@ -70,8 +70,8 @@ This project is licensed under the MIT Licence. See the [LICENSE](LICENSE) file 
 ## 👤 Author & Contact
 
 **Organisation:** Dev2Forge  
-**Website:** [https://www.dev2forge.software](https://www.dev2forge.software)  
-**Contact:** [Support](mailto:support@dev2forge.software)
+**Website:** [https://dev2forge.is-a.software](https://dev2forge.is-a.software)  
+**Contact:** [Support](mailto: dev2forge@tutamail.com)
 
 ---
 
